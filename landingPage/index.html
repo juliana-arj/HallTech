@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HallTech Web Hosting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+
+            <a href="" class="logo">
+                <img src="images/logo.png" alt="HallTech Web Hosting">
+
+
+
+            </a>
+
+            <nav class="main-nav">
+                <a href="#" class="nav-link active">Início</a>
+                <a href="#dominios" class="nav-link">Domínios</a>
+                <a href="#hospedagem" class="nav-link">Hospedagem</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="../dashboard/index.html" class="nav-link">Dashboard</a>
+            </nav>
+
+            <div class="header-actions" id="header-actions">
+
+                <a href="#" class="header-icon-btn" aria-label="Notificações">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+
+                    </svg>
+                </a>
+                <a href="#" class="header-icon-btn" aria-label="Carrinho">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+
+                    </svg>
+                </a>
+
+                <div class="profile-wrapper">
+
+                    <a href="#" class="header-icon-btn" id="profile-button" aria-label="Perfil">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+
+                        </svg>
+                    </a>
+
+                    <button class="logout-button" id="logout-button">
+                        Sair
+                    </button>
+
+                </div>
+
+            </div>
+
+            <a href="../login/index.html" class="login-button" id="auth-button">
+                <img src="images/user.png" class="login-icon" alt="Ícone de usuário">
+                <span>Login</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-background"></div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>
+                        Sua porta<br>
+                        de entrada<br>
+                        para a <span>nuvem.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Hospedagem Cloud de alta performance com arquitetura moderna,
+                        segurança avançada e conexão otimizada. Potencialize seus sistemas,
+                        e-commerce e aplicações com a estabilidade que sua empresa merece.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#hospedagem" class="btn btn-primary">
+                            <span>Começar agora</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-character"></div>
+            </div>
+
+            <div class="domain-search-wrapper">
+                <form class="domain-search" id="domainForm">
+                    <div class="domain-label">
+                        Encontre <strong>seu domínio</strong>
+                    </div>
+
+                    <div class="domain-input-wrapper">
+                        <input type="text" id="domainInput" class="domain-input" placeholder="Pesquise o seu domínio"
+                            aria-label="Pesquisar domínio">
+                    </div>
+
+                    <select id="domainExtension" class="domain-extension" aria-label="Extensão do domínio">
+                        <option value=".com.br">.com.br</option>
+                        <option value=".com">.com</option>
+                        <option value=".net">.net</option>
+                        <option value=".org">.org</option>
+                    </select>
+
+                    <button type="submit" class="domain-button" aria-label="Pesquisar domínio">
+                        <img src="images/pesquisa.png" class="search-icon" alt="Pesquisar">
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="why-section">
+            <div class="why-container">
+
+                <div class="why-intro">
+                    <h2>
+                        Por que escolher<br>
+                        a <span>HallTech</span>
+                    </h2>
+
+                    <p>
+                        Entregamos soluções em nuvem com tecnologia de ponta
+                        e atendimento que realmente faz a diferença.
+                    </p>
+                </div>
+
+                <div class="why-benefits">
+                    <article class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/foguete.png" style="--icon-size: 47px;" alt="Performance">
+                        </div>
+                        <h3>Performance<br>Garantida</h3>
+                        <p>Infraestrutura Cloud rápida e escalável para garantir performance máxima.</p>
+                    </article>
+
+                    <article class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/escudo.png" style="--icon-size: 58px;" alt="Segurança">
+                        </div>
+                        <h3>Segurança<br>Avançada</h3>
+                        <p>Proteção de dados com firewall, backups automáticos e monitoramento 24/7.</p>
+                    </article>
+
+                    <article class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/fone.png" style="--icon-size: 56px;" alt="Suporte">
+                        </div>
+                        <h3>Suporte<br>Especializado</h3>
+                        <p>Atendimento humano, rápido e eficiente sempre que você precisar.</p>
+                    </article>
+
+                    <article class="benefit-item">
+                        <div class="benefit-icon">
+                            <img src="images/nuvem.png" style="--icon-size: 60px;" alt="Disponibilidade">
+                        </div>
+                        <h3>Alta<br>Disponibilidade</h3>
+                        <p>Ambiente redundante com 99,9% de uptime para manter seu negócio sempre no ar.</p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="services-section" id="hospedagem">
+            <div class="services-container">
+
+                <div class="services-intro">
+                    <h2>Nossos<br><span>serviços</span></h2>
+                    <p>Soluções completas para levar seu projeto mais longe na nuvem.</p>
+                    <a href="#" class="services-button">Cadastrar</a>
+                </div>
+
+                <div class="services-cards">
+                    <article class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon">
+                                <img src="images/hospedagem.png" alt="Hospedagem de sites">
+                            </div>
+                            <h3>Hospedagem<br>de Sites</h3>
+                        </div>
+                        <p>Hospedagem Cloud rápida, segura e escalável para sites institucionais, blogs e portais.</p>
+                        <a href="#" class="service-link">Ver planos <span class="arrow">→</span></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon">
+                                <img src="images/dominios.png" alt="Registro de domínios">
+                            </div>
+                            <h3>Registro de<br>Domínios</h3>
+                        </div>
+                        <p>Registre o domínio ideal para sua marca com praticidade, segurança e o melhor preço.</p>
+                        <a href="#" class="service-link">Ver planos <span class="arrow">→</span></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon">
+                                <img src="images/sites.png" alt="Criação de sites e e-commerce">
+                            </div>
+                            <h3>Criação de Sites<br>e E-commerce</h3>
+                        </div>
+                        <p>Desenvolvemos sites e lojas virtuais modernas responsivas e otimizadas para vender mais.</p>
+                        <a href="#" class="service-link">Ver planos <span class="arrow">→</span></a>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="help-section" id="suporte">
+            <div class="help-container">
+                <div class="help-banner">
+                    <img src="images/ajuda.png" alt="Precisa de ajuda?" class="help-bg-img">
+
+                    <div class="help-content">
+                        <div class="help-text">
+                            <h2>
+                                <span class="title-top">Precisa de <span class="highlight">ajuda?</span></span>
+                                Nosso especialista está aqui!
+                            </h2>
+                            <p>
+                                Tire dúvidas, solicite suporte ou obtenha informações
+                                rápidas com nosso atendimento inteligente.
+                            </p>
+                        </div>
+
+                        <div class="help-card">
+                            <ul class="help-features">
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Respostas rápidas e precisas</span>
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Atendimento 24 horas por dia</span>
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Soluções sob medida para você</span>
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Fale agora mesmo!</span>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="help-btn">
+                                <svg class="chat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <span>Conversar com especialista</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="control-section">
+            <div class="control-container">
+
+                <div class="control-content">
+                    <div class="control-header">
+                        <h2>
+                            <span class="highlight">Controle total</span><br>
+                            em suas mãos
+                        </h2>
+                        <p>
+                            Gerencie seus serviços de forma simples e intuitiva com nosso painel administrativo moderno
+                            e completo.
+                        </p>
+                    </div>
+
+                    <ul class="control-features">
+                        <li>
+                            <div class="check-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Gerencie serviços e domínios</span>
+                        </li>
+                        <li>
+                            <div class="check-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Acompanhe uso de recursos</span>
+                        </li>
+                        <li>
+                            <div class="check-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Emita faturas e 2ª via de boletos</span>
+                        </li>
+                        <li>
+                            <div class="check-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Abra chamados com facilidade</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="control-media">
+                    <img src="images/dashboard.png" alt="Painel administrativo HallTech" class="control-image">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="blog-section" id="blog">
+            <div class="blog-container">
+
+                <div class="blog-intro">
+                    <h2>
+                        Notícias &<br>
+                        <span>Blog</span>
+                    </h2>
+
+                    <p>
+                        Acompanhe artigos e novidades para manter sua empresa sempre atualizada.
+                    </p>
+
+                    <a href="#" class="blog-link-all">
+                        <span>Ver todos os artigos</span>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="blog-cards">
+
+                    <article class="blog-card">
+                        <div class="blog-card-thumb">
+                            <img src="images/noticia1.png" alt="Imagem da notícia 1">
+                        </div>
+
+                        <div class="blog-card-content">
+                            <h3>Hospedagem Cloud Computing para sua empresa</h3>
+                            <p>Entenda os principais benefícios de migrar a infraestrutura para a nuvem...</p>
+                            <a href="#" class="blog-card-link">
+                                <span>Veja mais</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-thumb">
+                            <img src="images/noticia2.png" alt="Imagem da notícia 2">
+                        </div>
+                        <div class="blog-card-content">
+                            <h3>Hospedagem Cloud Computing para sua empresa</h3>
+                            <p>Entenda os principais benefícios de migrar a infraestrutura para a nuvem...</p>
+                            <a href="#" class="blog-card-link">
+                                <span>Veja mais</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-thumb">
+                            <img src="images/noticia3.png" alt="Imagem da notícia 3">
+                        </div>
+                        <div class="blog-card-content">
+                            <h3>Hospedagem Cloud Computing para sua empresa</h3>
+                            <p>Entenda os principais benefícios de migrar a infraestrutura para a nuvem...</p>
+                            <a href="#" class="blog-card-link">
+                                <span>Veja mais</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about-section" id="sobre">
+            <div class="about-container">
+
+                <div class="about-header">
+                    <h2>Sobre a <span>HallTech Web Hosting</span></h2>
+                    <p>
+                        A HallTech é uma empresa especializada em soluções de Cloud Computing,
+                        hospedagem de sites e serviços digitais. Com tecnologia de ponta e uma
+                        equipe altamente qualificada, ajudamos empresas de todos os tamanhos a
+                        crescerem com estabilidade, segurança e inovação.
+                    </p>
+                </div>
+
+                <div class="about-content">
+                    <div class="essence-intro">
+                        <h2>Nossa<br><span>Essência</span></h2>
+                        <p>Nossos pilares guiam cada decisão e cada solução que entregamos.</p>
+                    </div>
+
+                    <div class="essence-cards">
+                        <article class="essence-card">
+                            <div class="essence-icon">
+                                <img src="images/missao.png" style="--icon-size: 34px;" alt="Missão">
+                            </div>
+                            <h3>Missão</h3>
+                            <p>Oferecer soluções em nuvem de alta performance impulsionando o sucesso dos nossos
+                                clientes.</p>
+                        </article>
+
+                        <article class="essence-card">
+                            <div class="essence-icon">
+                                <img src="images/visao.png" style="--icon-size: 34px;" alt="visao">
+                            </div>
+                            <h3>Visão</h3>
+                            <p>Ser referência em serviços cloud no Brasil, reconhecida pela excelência, confiança e
+                                compromisso.</p>
+                        </article>
+
+                        <article class="essence-card">
+                            <div class="essence-icon">
+                                <img src="images/valores.png" style="--icon-size: 34px;" alt="Valores">
+                            </div>
+                            <h3>Valores</h3>
+                            <p>Inovação, Comprometimento, Transparência, Qualidade e Foco no Cliente.</p>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

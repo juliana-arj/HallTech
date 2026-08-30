@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalhes do Chamado | HallTech Web Hosting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <div class="dashboard-main">
+        <header class="dashboard-topbar">
+            <div class="topbar-user">
+                <div class="user-avatar" id="userAvatar">
+                </div>
+                <div class="user-info">
+                    <strong id="userName">
+                        Carregando...
+                    </strong>
+                    <span>
+                        Área do Cliente
+                    </span>
+                </div>
+            </div>
+        </header>
+        <main class="detail-page">
+            <div class="detail-heading-row">
+                <div class="detail-heading">
+                    <span class="detail-eyebrow">
+                        Área do Cliente
+                    </span>
+                    <h1 id="tituloChamado">
+                        Chamado
+                    </h1>
+                    <p>
+                        Visualize os detalhes da sua solicitação de suporte.
+                    </p>
+                </div>
+                <a href="../dashboard-chamados/index.html" class="detail-back-button">
+                    ← Voltar para chamados
+                </a>
+            </div>
+            <section class="detail-card">
+                <div class="detail-card-content">
+                    <div class="detail-ticket-header">
+                        <div class="detail-ticket-title">
+                            <span class="detail-ticket-number" id="numeroChamado">
+                                #--
+                            </span>
+                            <h2 id="assuntoChamado">
+                                Carregando...
+                            </h2>
+                        </div>
+                        <span id="statusChamado" class="detail-status">
+                            --
+                        </span>
+                    </div>
+                    <div class="detail-divider"></div>
+                    <div class="detail-info-grid">
+                        <div class="detail-info-item">
+                            <span class="detail-info-label">
+                                Categoria
+                            </span>
+                            <strong id="categoriaChamado">
+                                --
+                            </strong>
+                        </div>
+                        <div class="detail-info-item">
+                            <span class="detail-info-label">
+                                Prioridade
+                            </span>
+                            <strong id="prioridadeChamado">
+                                --
+                            </strong>
+                        </div>
+                        <div class="detail-info-item">
+                            <span class="detail-info-label">
+                                Data de abertura
+                            </span>
+                            <strong id="dataChamado">
+                                --
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="detail-card">
+                <div class="detail-card-content">
+                    <h3 class="detail-section-title">
+                        Descrição do problema
+                    </h3>
+                    <div id="descricaoChamado" class="detail-description">
+                        Carregando descrição...
+                    </div>
+                </div>
+            </section>
+            <section class="detail-card">
+                <div class="detail-card-content">
+                    <h3 class="detail-section-title">
+                        Resposta do suporte
+                    </h3>
+                    <div id="respostaChamado" class="detail-response">
+                        A equipe de suporte ainda não respondeu este chamado.
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

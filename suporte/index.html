@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Novo Chamado | HallTech Web Hosting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="ticket-top">
+        <section class="ticket-hero">
+            <div class="ticket-hero-container">
+
+                <div class="ticket-hero-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5Z"></path>
+                        <path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5Z"></path>
+                    </svg>
+                </div>
+
+                <div class="ticket-hero-text">
+                    <h1>Abrir Novo Chamado</h1>
+                    <p>Solicite suporte especializado para nossa equipe especializada.</p>
+                </div>
+
+                <div class="ticket-hero-illustration">
+                    <img src="images/suporte.png" alt="Suporte técnico HallTech">
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <section class="ticket-form-section">
+        <div class="ticket-form-container">
+
+            <h2 class="ticket-form-heading">Dados do Chamado</h2>
+
+            <div class="row g-4">
+
+                <div class="col-lg-8">
+                    <form class="card" id="ticketForm">
+                        <div class="card-body">
+
+                            <div class="row g-3 mb-3">
+                                <div>
+                                    <label for="ticketTitle" class="form-label">Título do chamado</label>
+                                    <input type="text" id="ticketTitle" class="form-control"
+                                        placeholder="Digite um título resumido para o seu problema" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label d-block">Prioridade</label>
+                                <div class="d-flex flex-wrap gap-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="priority" id="priorityLow"
+                                            value="baixa" checked>
+                                        <label class="form-check-label" for="priorityLow">Baixa</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="priority" id="priorityMedium"
+                                            value="media">
+                                        <label class="form-check-label" for="priorityMedium">Média</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="priority" id="priorityHigh"
+                                            value="alta">
+                                        <label class="form-check-label" for="priorityHigh">Alta</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ticketCategory" class="form-label">Categoria</label>
+                                <select id="ticketCategory" class="form-select" required>
+                                    <option value="">Carregando categorias...</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ticketDescription" class="form-label">Descrição do problema</label>
+                                <textarea id="ticketDescription" class="form-control" rows="4"
+                                    placeholder="Descreva aqui o seu problema com o máximo de detalhes possível..."
+                                    required></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label">Anexar arquivos <span
+                                        class="optional">(opcional)</span></label>
+                                <div class="file-dropzone" id="fileDropzone">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="17 8 12 3 7 8"></polyline>
+                                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                                    </svg>
+                                    <p><strong>Clique para enviar</strong> ou arraste arquivos aqui</p>
+                                    <input type="file" id="fileInput" multiple>
+                                </div>
+                                <div class="file-list" id="fileList"></div>
+                            </div>
+
+                            <div class="d-flex justify-content-end gap-3">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-cancelar">
+                                    Cancelar
+                                </button>
+                                <button type="submit"
+                                    class="btn btn-sm btn-primary d-inline-flex align-items-center gap-2">
+                                    <span>Enviar Chamado</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-4">
+                    <aside class="ticket-sidebar card">
+                        <div class="card-body">
+
+                            <h3>Informações Importantes</h3>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="9"></circle>
+                                        <polyline points="12 7 12 12 15 15"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Tempo médio de resposta</strong>
+                                    <p>Em até 1h útil</p>
+                                    <span>Para situações de prioridade alta</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Horário do suporte</strong>
+                                    <p>24/7 todos os dias</p>
+                                    <span>Atendimento contínuo e especializado</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 11l3 3L22 4"></path>
+                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Chamados em aberto:</strong>
+                                    <p>2</p>
+                                    <span>Acompanhe seus chamados no dashboard →</span>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <h3>Dicas para agilizar o atendimento</h3>
+
+                            <ul class="tips-list">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Descreva o problema com o máximo de detalhes</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Insira prints de tela, erros ou logs sempre que possível</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Informe o serviço ou domínio relacionado</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Fique atento ao e-mail para atualizações</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

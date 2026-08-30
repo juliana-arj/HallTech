@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova senha | HallTech Web Hosting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="auth-section">
+
+        <div class="auth-panel auth-panel-form">
+
+            <div class="auth-form-wrapper">
+
+                <a href="../landingPage/index.html" class="logo">
+                    <img src="images/logo.png" alt="HallTech Web Hosting">
+                </a>
+
+                <div class="auth-mobile-heading">
+
+                    <h1>Crie uma nova senha</h1>
+
+                    <p>
+                        Digite sua nova senha abaixo para
+                        recuperar o acesso à sua conta.
+                    </p>
+
+                </div>
+
+                <form class="auth-form" id="newPasswordForm">
+
+                    <div class="form-group">
+
+                        <label for="newPassword">
+                            Nova senha
+                        </label>
+
+                        <input type="password" id="newPassword" class="form-input" placeholder="Digite sua nova senha"
+                            autocomplete="new-password" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirmar nova senha
+                        </label>
+
+                        <input type="password" id="confirmPassword" class="form-input"
+                            placeholder="Digite a senha novamente" autocomplete="new-password" required>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary auth-submit" id="newPasswordButton">
+                        Alterar senha
+                    </button>
+
+                </form>
+
+                <p class="auth-switch">
+                    Lembrou sua senha?
+                    <a href="index.html">Voltar para o login</a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="auth-panel auth-panel-banner">
+
+            <svg class="auth-wave auth-wave-back" viewBox="0 0 80 800" preserveAspectRatio="none" aria-hidden="true">
+                <path fill="#ffffff"
+                    d="M40,0 Q80,50 40,100 Q0,150 40,200 Q80,250 40,300 Q0,350 40,400 Q80,450 40,500 Q0,550 40,600 Q80,650 40,700 Q0,750 40,800 L0,800 L0,0 Z">
+                </path>
+            </svg>
+
+            <svg class="auth-wave auth-wave-front" viewBox="0 0 80 800" preserveAspectRatio="none" aria-hidden="true">
+                <path fill="#ffffff"
+                    d="M40,0 Q80,50 40,100 Q0,150 40,200 Q80,250 40,300 Q0,350 40,400 Q80,450 40,500 Q0,550 40,600 Q80,650 40,700 Q0,750 40,800 L0,800 L0,0 Z">
+                </path>
+            </svg>
+
+            <div class="auth-banner-content">
+
+                <h2>
+                    Proteja sua<br>
+                    conta!
+                </h2>
+
+                <p>
+                    Escolha uma senha forte para manter
+                    sua conta HallTech segura.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="../js/supabase.js"></script>
+
+    <script src="nova-senha.js"></script>
+
+</body>
+
+</html>

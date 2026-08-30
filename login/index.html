@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | HallTech Web Hosting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="auth-section">
+
+        <div class="auth-panel auth-panel-form">
+            <div class="auth-form-wrapper">
+
+                <a href="../landingPage/index.html" class="logo">
+                    <img src="images/logo.png" alt="HallTech Web Hosting">
+                </a>
+
+                <div class="auth-mobile-heading">
+                    <h1>Bem-vindo(a) de volta!</h1>
+                    <p>Acesse sua conta e continue gerenciando seus serviços na nuvem.</p>
+                </div>
+
+                <form class="auth-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">E-mail</label>
+                        <input type="email" id="loginEmail" class="form-input" placeholder="Insira seu e-mail"
+                            autocomplete="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Senha</label>
+                        <input type="password" id="loginPassword" class="form-input" placeholder="Insira sua senha"
+                            autocomplete="current-password" required>
+                    </div>
+
+                    <a href="recuperar-senha.html" class="form-forgot">
+                        Esqueci minha senha
+                    </a>
+
+                    <label class="form-checkbox">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Lembrar de mim</span>
+                    </label>
+
+                    <button type="submit" class="btn btn-primary auth-submit">Entrar</button>
+                </form>
+
+                <div class="auth-divider">
+                    <span>ou entre com</span>
+                </div>
+
+                <button type="button" class="auth-google-btn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path fill="#4285F4"
+                            d="M23.52 12.27c0-.85-.08-1.67-.22-2.45H12v4.64h6.48a5.54 5.54 0 0 1-2.4 3.63v3.02h3.88c2.27-2.09 3.56-5.17 3.56-8.84Z" />
+                        <path fill="#34A853"
+                            d="M12 24c3.24 0 5.96-1.08 7.95-2.9l-3.88-3.02c-1.08.72-2.45 1.15-4.07 1.15-3.13 0-5.78-2.11-6.73-4.95H1.27v3.11A11.99 11.99 0 0 0 12 24Z" />
+                        <path fill="#FBBC05"
+                            d="M5.27 14.28a7.2 7.2 0 0 1 0-4.56V6.61H1.27a12 12 0 0 0 0 10.78l4-3.11Z" />
+                        <path fill="#EA4335"
+                            d="M12 4.77c1.76 0 3.34.61 4.59 1.8l3.44-3.44C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.69 1.27 6.61l4 3.11C6.22 6.88 8.87 4.77 12 4.77Z" />
+                    </svg>
+                    <span>Google</span>
+                </button>
+
+                <p class="auth-switch">Não tem uma conta? <a href="../cadastro/index.html">Criar conta</a></p>
+
+            </div>
+        </div>
+
+        <div class="auth-panel auth-panel-banner">
+
+            <svg class="auth-wave auth-wave-back" viewBox="0 0 80 800" preserveAspectRatio="none" aria-hidden="true">
+                <path fill="#ffffff"
+                    d="M40,0 Q80,50 40,100 Q0,150 40,200 Q80,250 40,300 Q0,350 40,400 Q80,450 40,500 Q0,550 40,600 Q80,650 40,700 Q0,750 40,800 L0,800 L0,0 Z">
+                </path>
+            </svg>
+
+            <svg class="auth-wave auth-wave-front" viewBox="0 0 80 800" preserveAspectRatio="none" aria-hidden="true">
+                <path fill="#ffffff"
+                    d="M40,0 Q80,50 40,100 Q0,150 40,200 Q80,250 40,300 Q0,350 40,400 Q80,450 40,500 Q0,550 40,600 Q80,650 40,700 Q0,750 40,800 L0,800 L0,0 Z">
+                </path>
+            </svg>
+
+            <div class="auth-banner-content">
+                <h2>Bem-vindo(a)<br>de volta!</h2>
+                <p>Acesse sua conta e continue gerenciando seus serviços na nuvem com a HallTech.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
