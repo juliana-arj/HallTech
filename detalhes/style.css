@@ -665,3 +665,57 @@ input {
         font-size: 12.5px;
     }
 }
+
+.attachment-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #f8fafc;
+}
+
+.attachment-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef4ff;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.attachment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.attachment-info strong {
+    font-size: 14px;
+    color: #1f2937;
+    word-break: break-all;
+}
+
+.attachment-info span {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.attachment-button {
+    padding: 8px 14px;
+    border-radius: 7px;
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.attachment-button:hover {
+    background: #1d4ed8;
+}

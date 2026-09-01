@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/landingPage/index.html"
+    },
+    {
+      "source": "/style.css",
+      "destination": "/landingPage/style.css"
+    },
+    {
+      "source": "/script.js",
+      "destination": "/landingPage/script.js"
+    },
+    {
+      "source": "/images/:path*",
+      "destination": "/landingPage/images/:path*"
+    }
+  ]
+}
