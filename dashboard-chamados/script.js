@@ -125,7 +125,8 @@ function exibirChamados(listaChamados) {
         linha.style.cursor = 'pointer';
 
         linha.addEventListener('click', () => {
-            window.location.href = `../detalhes/index.html?id=${chamado.id_chamado}`;
+            window.location.href =
+                `../chamados/index.html?id=${chamado.id_chamado}`;
         });
 
         linha.innerHTML = `
@@ -204,9 +205,16 @@ async function carregarPerfilNavbar(usuario) {
 
     const nomeCompleto = data.nome_completo;
 
-    const partesNome = nomeCompleto.trim().split(' ');
+    const partesNome = nomeCompleto.trim().split(/\s+/);
+
+    let nomeExibicao = nomeCompleto;
+
+    if (partesNome.length >= 2) {
+        nomeExibicao = `${partesNome[0]} ${partesNome[partesNome.length - 1]}`;
+    }
 
     const primeiraLetra = partesNome[0]?.charAt(0) || '';
+
     const ultimaLetra =
         partesNome.length > 1
             ? partesNome[partesNome.length - 1].charAt(0)
@@ -228,7 +236,7 @@ async function carregarPerfilNavbar(usuario) {
 
     document.getElementById('userAvatar').textContent = iniciais;
 
-    document.getElementById('userName').textContent = nomeCompleto;
+    document.getElementById('userName').textContent = nomeExibicao;
 
     document.getElementById('userSince').textContent =
         `Cliente desde ${mesFormatado.charAt(0).toUpperCase() + mesFormatado.slice(1)}/${ano}`;

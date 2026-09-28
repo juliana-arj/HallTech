@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dashboard | HallTech</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="dashboard-body">
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo"><img alt="HallTech Web Hosting" src="images/logo.png" /><button
+                aria-label="Fechar menu" class="sidebar-close" id="sidebarClose" type="button">×</button></div>
+        <nav aria-label="Navegação principal" class="sidebar-nav">
+            <div class="sidebar-group"><span class="sidebar-group-title">Visão Geral</span><a aria-current="page"
+                    class="sidebar-link active" fill="none" href="../index/index.html" stroke="currentColor"
+                    stroke-width="2">
+                    <rect height="9" rx="1.5" width="7" x="3" y="3"></rect>
+                    <rect height="5" rx="1.5" width="7" x="14" y="3"></rect>
+                    <rect height="9" rx="1.5" width="7" x="14" y="12"></rect>
+                    <rect height="5" rx="1.5" width="7" x="3" y="16"></rect><span>Dashboard</span>
+                </a></div>
+            <div class="sidebar-group"><span class="sidebar-group-title">Serviços</span><a class="sidebar-link"
+                    href="../servicos/index.html"><svg aria-hidden="true" fill="none" stroke="currentColor"
+                        stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M18 10h-1.3A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10Z"></path>
+                    </svg><span>Meus Serviços</span></a><a class="sidebar-link" href="../dominios/index.html"><svg
+                        aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <line x1="3" x2="21" y1="12" y2="12"></line>
+                        <path d="M12 3a13 13 0 0 1 0 18a13 13 0 0 1 0-18Z"></path>
+                    </svg><span>Domínios</span></a><a class="sidebar-link" href="../faturas/index.html"><svg
+                        aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"></path>
+                        <path d="M14 2v5h5"></path>
+                    </svg><span>Faturas</span></a><a class="sidebar-link" href="../backup/index.html"><svg
+                        aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M21 12a9 9 0 1 1-3-6.7"></path>
+                        <path d="M21 3v6h-6"></path>
+                    </svg><span>Backups</span></a></div>
+            <div class="sidebar-group"><span class="sidebar-group-title">Suporte</span><a class="sidebar-link"
+                    href="../dashboard-chamados/index.html"><svg aria-hidden="true" fill="none" stroke="currentColor"
+                        stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                        <path
+                            d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3ZM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3Z">
+                        </path>
+                    </svg><span>Chamados</span></a><a class="sidebar-link" href="../suporte/index.html"><svg
+                        aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"></path>
+                        <path d="M12 17h.01"></path>
+                    </svg><span>Central de Ajuda</span></a></div>
+            <div class="sidebar-group"><span class="sidebar-group-title">Conta</span><a class="sidebar-link"
+                    href="../perfil/index.html"><svg aria-hidden="true" fill="none" stroke="currentColor"
+                        stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg><span>Perfil</span></a><a class="sidebar-link" href="../senha/index.html"><svg
+                        aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.6v.1a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.6-1H3a2 2 0 1 1 0-4h.2a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3h.1a1.7 1.7 0 0 0 1-1.6V3a2 2 0 1 1 4 0v.2a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8v.1a1.7 1.7 0 0 0 1.6 1h.1a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.6 1Z">
+                        </path>
+                    </svg><span>Configurações</span></a></div>
+        </nav><a class="sidebar-logout" href="../landingPage/index.html"><svg aria-hidden="true" fill="none"
+                stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" x2="9" y1="12" y2="12"></line>
+            </svg><span>Sair</span></a>
+    </aside>
+    <div class="dashboard-main">
+        <header class="dashboard-topbar"><button aria-controls="sidebar" aria-expanded="false" aria-label="Abrir menu"
+                class="sidebar-toggle" id="sidebarToggle"
+                type="button"><span></span><span></span><span></span></button><label class="topbar-search"
+                for="dashboardSearch"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"
+                    viewbox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                </svg><input aria-label="Buscar" id="dashboardSearch"
+                    placeholder="Buscar por serviços, domínios, faturas..." type="search" /></label>
+            <div class="topbar-user">
+                <div aria-hidden="true" class="user-avatar">AW</div>
+                <div class="user-info"><strong>Alessandro W.</strong><span>Cliente desde Jun/2024</span></div>
+            </div>
+        </header>
+        <main class="dashboard-content">
+            <div class="eyebrow">ÁREA DO CLIENTE</div>
+            <h1 class="page-title">Dashboard</h1>
+            <p class="page-sub">Confira um resumo da sua conta.</p>
+            <div class="grid-4col inline-style-1">
+                <div class="card card-pad inline-style-2">
+                    <div class="inline-style-3"><svg fill="none" height="18" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"
+                            width="18">
+                            <path d="M17.5 19a4.5 4.5 0 1 0-1.44-8.77A6 6 0 1 0 6 17.5"></path>
+                        </svg></div>
+                    <div>
+                        <div class="small muted inline-style-4">Serviços Ativos</div>
+                        <div class="inline-style-5">3</div>
+                        <a class="small inline-style-6" href="../servicos/index.html">Ver serviços <svg fill="none"
+                                height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2.5" viewbox="0 0 24 24" width="15">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="card card-pad inline-style-7">
+                    <div class="inline-style-8"><svg fill="none" height="18" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"
+                            width="18">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M2 12h20"></path>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg></div>
+                    <div>
+                        <div class="small muted inline-style-9">Domínios</div>
+                        <div class="inline-style-10">2</div>
+                        <a class="small inline-style-11" href="../dominios/index.html">Gerenciar <svg fill="none"
+                                height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2.5" viewbox="0 0 24 24" width="15">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="card card-pad inline-style-12">
+                    <div class="inline-style-13"><svg fill="none" height="18" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"
+                            width="18">
+                            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                            <path
+                                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3ZM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3Z">
+                            </path>
+                        </svg></div>
+                    <div>
+                        <div class="small muted inline-style-14">Chamados Abertos</div>
+                        <div class="inline-style-15">1</div>
+                        <a class="small inline-style-16" href="../dashboard-chamados/index.html">Ver chamados <svg
+                                fill="none" height="15" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="15">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="card card-pad inline-style-17">
+                    <div class="inline-style-18"><svg fill="none" height="18" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"
+                            width="18">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M9 13h6M9 17h6"></path>
+                        </svg></div>
+                    <div>
+                        <div class="small muted inline-style-19">Faturas em Aberto</div>
+                        <div class="inline-style-20">R$ 129,70</div>
+                        <a class="small inline-style-21" href="../faturas/index.html">Ver faturas <svg fill="none"
+                                height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2.5" viewbox="0 0 24 24" width="15">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-2 inline-style-22">
+                <div class="card card-pad">
+                    <div class="row-between inline-style-23">
+                        <h3 class="inline-style-24">Uso dos Serviços</h3>
+                        <span class="small muted">Consumo atual dos seus serviços</span>
+                    </div>
+                    <div class="inline-style-25">
+                        <div class="inline-style-26"><svg fill="none" height="18" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"
+                                width="18">
+                                <path d="M17.5 19a4.5 4.5 0 1 0-1.44-8.77A6 6 0 1 0 6 17.5"></path>
+                            </svg></div>
+                        <div class="inline-style-27">
+                            <div class="row-between inline-style-28">
+                                <span class="inline-style-29">Hospedagem Cloud Intermediário</span>
+                                <span class="small muted">11.20 GB / 15 GB</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill inline-style-30"></div>
+                            </div>
+                        </div>
+                        <span class="inline-style-31">75%</span>
+                    </div>
+                    <div class="inline-style-32">
+                        <div class="inline-style-33"><svg fill="none" height="22" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"
+                                width="22">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
+                                <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"></path>
+                            </svg></div>
+                        <div class="inline-style-34">
+                            <div class="row-between inline-style-35">
+                                <span class="inline-style-36">Banco de Dados</span>
+                                <span class="small muted">2 / 5</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill inline-style-37"></div>
+                            </div>
+                        </div>
+                        <span class="inline-style-38">40%</span>
+                    </div>
+                    <div class="inline-style-39">
+                        <a class="small inline-style-40" href="../servicos/index.html">Ver todos os serviços <svg
+                                fill="none" height="15" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="15">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="card card-pad">
+                    <h3 class="inline-style-41">Atalhos Rápidos</h3>
+                    <a class="row-between inline-style-42" href="../dominios/index.html">
+                        <span class="inline-style-43"><svg fill="none" height="18" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"
+                                width="18">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M2 12h20"></path>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg> Registrar Domínio</span>
+                        <span class="inline-style-44"><svg fill="none" height="15" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24"
+                                width="15">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></span>
+                    </a>
+                    <a class="row-between inline-style-45" href="../novo-chamado/index.html">
+                        <span class="inline-style-46"><svg fill="none" height="18" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"
+                                width="18">
+                                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                                <path
+                                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3ZM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3Z">
+                                </path>
+                            </svg> Abrir Chamado</span>
+                        <span class="inline-style-47"><svg fill="none" height="15" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24"
+                                width="15">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></span>
+                    </a>
+                    <a class="row-between inline-style-48" href="../backup/index.html">
+                        <span class="inline-style-49"><svg fill="none" height="18" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"
+                                width="18">
+                                <path d="M21 12a9 9 0 1 1-3-6.7"></path>
+                                <path d="M21 3v6h-6"></path>
+                            </svg> Fazer Backup</span>
+                        <span class="inline-style-50"><svg fill="none" height="15" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24"
+                                width="15">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></span>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-3col">
+                <div class="card card-pad">
+                    <div class="row-between inline-style-51">
+                        <h3 class="inline-style-52">Últimos Chamados</h3>
+                        <a class="small inline-style-53" href="../dashboard-chamados/index.html">Ver todos</a>
+                    </div>
+                    <div id="ultimosChamados"></div>
+                </div>
+                <div class="card card-pad">
+                    <h3 class="inline-style-62">Próxima Fatura</h3>
+                    <div class="small muted inline-style-63">Valor total</div>
+                    <div class="inline-style-64">R$ 129,70</div>
+                    <span class="badge badge-orange inline-style-65">Em aberto</span>
+                    <div class="small muted inline-style-66">Vencimento em 20/08/2026</div>
+                    <a class="btn btn-primary btn-block inline-style-67" href="../faturas/index.html">Pagar agora</a>
+                    <div class="inline-style-68">
+                        <a class="small inline-style-69" href="../faturas/index.html">Ver todas as faturas <svg
+                                fill="none" height="15" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="15">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="card card-pad">
+                    <div class="row-between inline-style-70">
+                        <h3 class="inline-style-71">Notificações</h3>
+                        <a class="small inline-style-72" href="../notificacoes/index.html">Ver todas</a>
+                    </div>
+                    <div class="inline-style-73">
+                        <span class="inline-style-74"></span>
+                        <div class="inline-style-75">
+                            <div class="row-between">
+                                <span class="inline-style-76">Backup concluído com sucesso</span>
+                                <span class="small muted inline-style-77">Hoje, 03:15</span>
+                            </div>
+                            <div class="small muted inline-style-78">Seu backup diário foi concluído com sucesso.</div>
+                        </div>
+                    </div>
+                    <div class="inline-style-79">
+                        <span class="inline-style-80"></span>
+                        <div class="inline-style-81">
+                            <div class="row-between">
+                                <span class="inline-style-82">Manutenção programada</span>
+                                <span class="small muted inline-style-83">23/05/2024</span>
+                            </div>
+                            <div class="small muted inline-style-84">Haverá manutenção em 25/08 às 02:00.</div>
+                        </div>
+                    </div>
+                    <div class="inline-style-85">
+                        <span class="inline-style-86"></span>
+                        <div class="inline-style-87">
+                            <div class="row-between">
+                                <span class="inline-style-88">Fatura gerada</span>
+                                <span class="small muted inline-style-89">21/05/2024</span>
+                            </div>
+                            <div class="small muted inline-style-90">Sua fatura de R$ 129,70 foi gerada.</div>
+                        </div>
+                    </div>
+                    <div class="inline-style-91">
+                        <span class="inline-style-92"></span>
+                        <div class="inline-style-93">
+                            <div class="row-between">
+                                <span class="inline-style-94">Novo recurso disponível</span>
+                                <span class="small muted inline-style-95">18/05/2024</span>
+                            </div>
+                            <div class="small muted inline-style-96">Conheça o novo recurso de migração gratuita.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
