@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>HallTech — Blog — Notícia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="frame">
+
+    <header class="header">
+      <div class="header-container">
+        <a href="../landingPage/index.html" class="logo" aria-label="HallTech">
+          <img src="images/logo.png" alt="HallTech Web Hosting">
+        </a>
+
+        <nav class="main-nav public-nav" id="siteNavPublic">
+          <a href="../landingPage/index.html" class="nav-link">Início</a>
+          <a href="../hospedagem/index.html" class="nav-link">Hospedagem</a>
+          <a href="../blog/blog-lista.html" class="nav-link active">Blog</a>
+          <a href="../index/index.html" class="nav-link">Dashboard</a>
+        </nav>
+
+        <nav class="main-nav logged-nav" id="siteNavLogged">
+          <a href="../landingPage/index.html" class="nav-link">Início</a>
+          <a href="../hospedagem/index.html" class="nav-link">Hospedagem</a>
+          <a href="../blog/blog-lista.html" class="nav-link active">Blog</a>
+          <a href="../dashboard/index.html" class="nav-link">Dashboard</a>
+        </nav>
+
+        <a href="../login/index.html" class="login-button public-only">
+          <img src="images/User.png" class="login-icon" alt="" aria-hidden="true">
+          Entrar
+        </a>
+
+        <div class="header-actions logged-only">
+          <button type="button" class="header-icon-btn notification-trigger" aria-label="Notificações"
+            aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            <span class="notification-dot"></span>
+          </button>
+          <a href="../carrinho/carrinho.html" class="header-icon-btn" aria-label="Carrinho">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+          </a>
+          <a href="../dashboard/index.html" class="header-icon-btn" aria-label="Minha conta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+        </div>
+
+        <div class="notification-panel" hidden>
+          <strong>Notificações</strong>
+          <p>Nenhuma nova notificação no momento.</p>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+
+
+    <div class="container-narrow">
+      <div class="small muted" style="margin-bottom:20px;">Blog / <span
+          style="color:var(--blue-700); font-weight:600;">Infraestrutura</span></div>
+
+      <span class="badge badge-blue">Infraestrutura</span>
+      <h1 style="font-size:30px; line-height:38px; font-weight:700; margin:16px 0 18px;">Como será o supercomputador
+        brasileiro de IA de R$ 1 bilhão</h1>
+
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:24px;">
+        <div
+          style="width:40px; height:40px; border-radius:50%; background:var(--blue-100); display:flex; align-items:center; justify-content:center; color:var(--blue-700); font-weight:700;">
+          MC</div>
+        <div>
+          <div style="font-size:14px; font-weight:600;">Mariana Costa</div>
+          <div class="small muted" style="display:flex; align-items:center; gap:6px;"><svg width="14" height="14"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <path d="M16 2v4M8 2v4M3 10h18" />
+            </svg> 22/11/2026 · 6 min de leitura</div>
+        </div>
+      </div>
+
+      <div
+        style="height:380px; border-radius:16px; background-image:url('images/img1.png'); background-size:cover; background-position:center; margin-bottom:32px;">
+      </div>
+
+      <div style="font-size:16px; line-height:28px; color:var(--text);">
+        <p style="margin-bottom:18px;">O governo federal confirmou o investimento em um novo centro de processamento de
+          dados voltado exclusivamente a modelos de inteligência artificial, com previsão de entrada em operação no
+          início de 2027.</p>
+        <p style="margin-bottom:18px;">A estrutura contará com milhares de unidades de processamento gráfico
+          distribuídas em múltiplos data centers, refrigeração líquida e conexão direta à rede elétrica renovável da
+          região.</p>
+        <h3 style="margin:28px 0 12px;">Por que isso importa</h3>
+        <p style="margin-bottom:18px;">Especialistas apontam que a iniciativa deve reduzir a dependência de
+          infraestrutura estrangeira para treinamento de modelos nacionais, além de gerar empregos qualificados na
+          região.</p>
+      </div>
+
+      <div style="display:flex; gap:10px; margin:32px 0 40px;">
+        <span class="badge badge-gray">#inteligência-artificial</span>
+        <span class="badge badge-gray">#datacenter</span>
+        <span class="badge badge-gray">#brasil</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2 style="margin:32px 0 20px;">Notícias relacionadas</h2>
+
+      <div class="grid-3col" style="margin-bottom:48px;">
+
+        <a class="card" style="overflow:hidden; display:flex; flex-direction:column; height:100%;">
+          <div
+            style="width:100%; height:150px; flex-shrink:0; background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8pan-tmbokTW0f4OZ1x5eW_wkKLo8_ZYNRgs3ERzqw&s=10'); background-size:cover; background-position:center;">
+          </div>
+
+          <div style="padding:18px 20px; display:flex; flex-direction:column; flex:1;">
+            <span class="badge badge-orange" style="align-self:flex-start;">Segurança</span>
+
+            <h3 style="margin-top:10px; line-height:1.4;">
+              O que acontece com seus dados ao 'deletar'?
+            </h3>
+
+            <div class="row-between" style="margin-top:auto; padding-top:18px;">
+              <span class="small muted">15/11/2026</span>
+
+              <span class="small"
+                style="color:var(--blue-700); font-weight:600; display:flex; align-items:center; gap:4px;">
+                Ler mais
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" style="overflow:hidden; display:flex; flex-direction:column; height:100%;">
+          <div
+            style="width:100%; height:150px; flex-shrink:0; background-image:url('https://eboxapps.blob.core.windows.net/blog/1044950366.jpeg?sv=2020-08-04&st=2022-12-12T11:12:09Z&se=9998-12-31T23:59:59Z&si=ReadOnlyPolicy&sr=b&sig=t8j%2FNKpUj%2Fj5xJHV1ImkFRQtZzjpHEXGut8jmah3yao%3D'); background-size:cover; background-position:center;">
+          </div>
+
+          <div style="padding:18px 20px; display:flex; flex-direction:column; flex:1;">
+            <span class="badge badge-blue" style="align-self:flex-start;">Destaque</span>
+
+            <h3 style="margin-top:10px; line-height:1.4;">
+              Como escolher o melhor servidor
+            </h3>
+
+            <div class="row-between" style="margin-top:auto; padding-top:18px;">
+              <span class="small muted">22/11/2026</span>
+
+              <span class="small"
+                style="color:var(--blue-700); font-weight:600; display:flex; align-items:center; gap:4px;">
+                Ler mais
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" style="overflow:hidden; display:flex; flex-direction:column; height:100%;">
+          <div
+            style="width:100%; height:150px; flex-shrink:0; background-image:url('https://img.magnific.com/fotos-gratis/fundo-abstrato-com-design-low-poly_1048-8478.jpg?semt=ais_hybrid&w=740&q=80'); background-size:cover; background-position:center;">
+          </div>
+
+          <div style="padding:18px 20px; display:flex; flex-direction:column; flex:1;">
+            <span class="badge badge-purple" style="align-self:flex-start;">Notícias</span>
+
+            <h3 style="margin-top:10px; line-height:1.4;">
+              Julgamento que acusa Meta
+            </h3>
+
+            <div class="row-between" style="margin-top:auto; padding-top:18px;">
+              <span class="small muted">08/11/2026</span>
+
+              <span class="small"
+                style="color:var(--blue-700); font-weight:600; display:flex; align-items:center; gap:4px;">
+                Ler mais
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="divider"></div>
+
+      <h2 style="margin:32px 0 20px;">Comentários (2)</h2>
+
+      <div class="card card-pad" style="margin-bottom:24px;">
+        <label style="font-size:13px; font-weight:600; display:block; margin-bottom:8px;">Deixe seu comentário</label>
+        <textarea placeholder="Escreva um comentário..."
+          style="width:100%; height:90px; border:1px solid var(--border); border-radius:var(--radius-sm); padding:14px; font-size:15px; font-family:inherit; resize:none;"></textarea>
+        <div class="row-between" style="margin-top:14px;">
+          <span class="small muted">Faça login para comentar</span>
+          <button class="btn btn-primary btn-sm">Enviar comentário</button>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:14px; margin-bottom:20px;">
+        <div
+          style="width:38px; height:38px; border-radius:50%; background:var(--blue-100); flex-shrink:0; display:flex; align-items:center; justify-content:center; color:var(--blue-700);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <div class="row-between">
+            <span style="font-size:14px; font-weight:600;">Rafael Souza</span>
+            <span class="small muted">2 dias atrás</span>
+          </div>
+          <p style="font-size:14px; margin-top:6px; color:var(--text);">Excelente iniciativa, esperamos que gere
+            empregos na região.</p>
+        </div>
+      </div>
+      <div style="display:flex; gap:14px;">
+        <div
+          style="width:38px; height:38px; border-radius:50%; background:var(--blue-100); flex-shrink:0; display:flex; align-items:center; justify-content:center; color:var(--blue-700);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </div>
+        <div style="flex:1;">
+          <div class="row-between">
+            <span style="font-size:14px; font-weight:600;">Ana Lima</span>
+            <span class="small muted">1 dia atrás</span>
+          </div>
+          <p style="font-size:14px; margin-top:6px; color:var(--text);">Gostaria de saber mais sobre o cronograma de
+            construção.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">© 2026 HallTech. Todos os direitos reservados. — Wireframe visual para handoff Figma.
+    </footer>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

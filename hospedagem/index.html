@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedagem Cloud | HallTech Web Hosting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+
+            <a href="../index/index.html" class="logo">
+                <img src="images/logo.png" alt="HallTech Web Hosting">
+            </a>
+
+            <nav class="main-nav">
+                <a href="../landingPage/index.html" class="nav-link">Início</a>
+                <a href="../hospedagem/index.html" class="nav-link active">Hospedagem</a>
+                <a href="../blog/blog-lista.html" class="nav-link">Blog</a>
+                <a href="../index/index.html" class="nav-link">Dashboard</a>
+            </nav>
+
+            <a href="../login/index.html" class="login-button">
+                <img src="images/user.png" class="login-icon" alt="Ícone de usuário">
+                <span>Entrar</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-container">
+
+            <div class="page-hero-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="6" rx="2"></rect>
+                    <rect x="2" y="14" width="20" height="6" rx="2"></rect>
+                    <line x1="6" y1="7" x2="6.01" y2="7"></line>
+                    <line x1="6" y1="17" x2="6.01" y2="17"></line>
+                </svg>
+            </div>
+
+            <div class="page-hero-text">
+                <h1>Hospedagem Cloud</h1>
+                <p>Escolha o plano ideal para o seu projeto.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="plans-section">
+        <div class="page-content-container">
+
+            <div class="billing-toggle">
+                <span class="billing-option active" data-period="trimestral">Trimestral</span>
+                <span class="billing-option" data-period="anual">
+                    Anual
+                    <span class="billing-badge">15% OFF</span>
+                </span>
+            </div>
+
+            <div class="plans-grid">
+
+                <article class="plan-card" data-monthly="49.90" data-quarterly-billed="149.70"
+                    data-annual-monthly="42.40" data-annual-billed="508.80">
+                    <span class="plan-name">Básico</span>
+                    <p class="plan-desc">Ideal para projetos pequenos e sites institucionais.</p>
+
+                    <div class="plan-price">
+                        <strong class="plan-price-value">R$ 49,90</strong>
+                        <span>/mês</span>
+                    </div>
+                    <p class="plan-billed-as">Cobrado trimestralmente R$ 149,70</p>
+
+                    <ul class="plan-features">
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> 5 GB de Armazenamento SSD</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> 50 GB de Tráfego Mensal</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> 1 Site</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> Backup Semanal</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> 1 Banco de Dados</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> Certificado SSL Grátis</li>
+                    </ul>
+
+                    <button type="button" class="plan-btn">Contratar agora</button>
+                </article>
+
+                <article class="plan-card is-featured" data-monthly="59.90" data-quarterly-billed="179.70"
+                    data-annual-monthly="50.90" data-annual-billed="610.80">
+                    <span class="plan-badge">Mais escolhido</span>
+
+                    <span class="plan-name">Intermediário</span>
+                    <p class="plan-desc">Perfeito para empresas em crescimento.</p>
+
+                    <div class="plan-price">
+                        <strong class="plan-price-value">R$ 59,90</strong>
+                        <span>/mês</span>
+                    </div>
+                    <p class="plan-billed-as">Cobrado trimestralmente R$ 179,70</p>
+
+                    <ul class="plan-features">
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> 15 GB de Armazenamento SSD</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> 150 GB de Tráfego Mensal</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> 5 Sites</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> Backup Diário</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> 5 Bancos de Dados</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> Certificado SSL Grátis</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> Domínio Grátis</li>
+                    </ul>
+
+                    <button type="button" class="plan-btn">Contratar agora</button>
+                </article>
+
+                <article class="plan-card" data-monthly="99.90" data-quarterly-billed="299.70"
+                    data-annual-monthly="84.90" data-annual-billed="1018.80">
+                    <span class="plan-name">Avançado</span>
+                    <p class="plan-desc">Para projetos robustos que precisam de mais recursos.</p>
+
+                    <div class="plan-price">
+                        <strong class="plan-price-value">R$ 99,90</strong>
+                        <span>/mês</span>
+                    </div>
+                    <p class="plan-billed-as">Cobrado trimestralmente R$ 299,70</p>
+
+                    <ul class="plan-features">
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> 50 GB de Armazenamento SSD</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> 500 GB de Tráfego Mensal</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> Sites Ilimitados</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> Backup Diário</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> Bancos de Dados Ilimitados</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> Certificado SSL Grátis</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> Domínio Grátis</li>
+                        <li><span class="plan-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span> CDN Incluso</li>
+                    </ul>
+
+                    <button type="button" class="plan-btn">Contratar agora</button>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
