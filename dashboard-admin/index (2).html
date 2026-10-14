@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo | HallTech Web Hosting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <img src="images/logo.png" alt="HallTech Web Hosting">
+            <span class="admin-badge">ADMIN</span>
+
+            <button class="sidebar-close" id="sidebarClose" aria-label="Fechar menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Visão Geral</span>
+
+                <a href="index.html" class="sidebar-link active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="9" rx="1.5"></rect>
+                        <rect x="14" y="3" width="7" height="5" rx="1.5"></rect>
+                        <rect x="14" y="12" width="7" height="9" rx="1.5"></rect>
+                        <rect x="3" y="16" width="7" height="5" rx="1.5"></rect>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Gestão</span>
+
+                <a href="../admin-clientes/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Clientes</span>
+                </a>
+
+                <a href="../admin-servicos/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="6" rx="1.5"></rect>
+                        <rect x="3" y="14" width="18" height="6" rx="1.5"></rect>
+                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                        <line x1="7" y1="17" x2="7.01" y2="17"></line>
+                    </svg>
+                    <span>Serviços</span>
+                </a>
+
+                <a href="../admin-dominios/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <path d="M12 3a13 13 0 0 1 0 18a13 13 0 0 1 0-18Z"></path>
+                    </svg>
+                    <span>Domínios</span>
+                </a>
+
+                <a href="../admin-faturamento/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                    <span>Faturamento</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Contas e hospedagem</span>
+                <a href="../admin-contas/index.html" class="sidebar-link nav-contas">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                        <path d="M7 8h10M7 12h6M7 16h4"></path>
+                    </svg>
+                    <span>Contas de hospedagem</span>
+                </a>
+                <a href="../admin-pacotes/index.html" class="sidebar-link nav-pacotes">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m12 3 9 5-9 5-9-5 9-5Z"></path>
+                        <path d="m3 12 9 5 9-5M3 16l9 5 9-5"></path>
+                    </svg>
+                    <span>Pacotes e recursos</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Suporte</span>
+
+                <a href="../admin-chamados/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>Chamados</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Conteúdo</span>
+
+                <a href="../admin-blog/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2">
+                        </path>
+                        <line x1="10" y1="10" x2="18" y2="10"></line>
+                        <line x1="10" y1="14" x2="18" y2="14"></line>
+                    </svg>
+                    <span>Blog</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Sistema</span>
+
+                <a href="../admin-configuracoes/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z">
+                        </path>
+                    </svg>
+                    <span>Configurações</span>
+                </a>
+            </div>
+
+        </nav>
+
+        <a href="../landingPage/index.html" class="sidebar-logout" id="sidebarLogout">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+            <span>Sair</span>
+        </a>
+
+    </aside>
+
+    <div class="dashboard-main">
+
+        <header class="dashboard-topbar">
+
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="topbar-search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Buscar clientes, serviços, faturas..." data-global-search
+                    aria-label="Buscar nesta página">
+            </div>
+
+            <div class="topbar-user">
+                <div class="user-avatar user-avatar-admin" id="userAvatar">HT</div>
+                <div class="user-info">
+                    <strong id="userName">Equipe HallTech</strong>
+                    <span>Administrador</span>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="dashboard-content">
+
+            <div class="page-heading-row">
+                <div class="dashboard-heading">
+                    <span class="dashboard-eyebrow">Painel Administrativo</span>
+                    <h1>Dashboard</h1>
+                    <p>Visão geral do negócio HallTech.</p>
+                </div>
+                <a href="../novo-cliente/index.html" class="btn-new">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    <span>Novo cliente</span>
+                </a>
+            </div>
+
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <div class="stat-icon stat-icon-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-label">Clientes Ativos</span>
+                        <strong class="stat-value">248</strong>
+                        <a href="../admin-clientes/index.html" class="stat-link">Ver clientes →</a>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon stat-icon-green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-label">Receita Mensal (MRR)</span>
+                        <strong class="stat-value">R$ 32.480</strong>
+                        <a href="../admin-faturamento/index.html" class="stat-link">Ver faturamento →</a>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon stat-icon-orange">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-label">Chamados Abertos</span>
+                        <strong class="stat-value">12</strong>
+                        <a href="../admin-chamados/index.html" class="stat-link">Ver chamados →</a>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon stat-icon-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-label">Uptime da Rede</span>
+                        <strong class="stat-value">99.98%</strong>
+                        <a href="../admin-servicos/index.html" class="stat-link">Ver servidores →</a>
+                    </div>
+                </article>
+            </div>
+
+            <section class="panel">
+                <div class="panel-header">
+                    <h2>Receita dos últimos 6 meses</h2>
+                    <span class="panel-link">R$ 178.230 no período</span>
+                </div>
+
+                <div class="chart-bars">
+                    <div class="chart-bar-col">
+                        <span class="chart-bar-value">R$ 24.1k</span>
+                        <div class="chart-bar" style="height: 54%;"></div>
+                        <span class="chart-bar-label">Abr</span>
+                    </div>
+                    <div class="chart-bar-col">
+                        <span class="chart-bar-value">R$ 26.8k</span>
+                        <div class="chart-bar" style="height: 60%;"></div>
+                        <span class="chart-bar-label">Mai</span>
+                    </div>
+                    <div class="chart-bar-col">
+                        <span class="chart-bar-value">R$ 28.4k</span>
+                        <div class="chart-bar" style="height: 64%;"></div>
+                        <span class="chart-bar-label">Jun</span>
+                    </div>
+                    <div class="chart-bar-col">
+                        <span class="chart-bar-value">R$ 30.1k</span>
+                        <div class="chart-bar" style="height: 68%;"></div>
+                        <span class="chart-bar-label">Jul</span>
+                    </div>
+                    <div class="chart-bar-col">
+                        <span class="chart-bar-value">R$ 36.3k</span>
+                        <div class="chart-bar" style="height: 82%;"></div>
+                        <span class="chart-bar-label">Ago</span>
+                    </div>
+                    <div class="chart-bar-col">
+                        <span class="chart-bar-value">R$ 32.4k</span>
+                        <div class="chart-bar chart-bar-current" style="height: 73%;"></div>
+                        <span class="chart-bar-label">Set</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="dashboard-grid-2">
+
+                <section class="panel">
+                    <div class="panel-header">
+                        <h2>Últimos Clientes Cadastrados</h2>
+                        <a href="../admin-clientes/index.html" class="panel-link">Ver todos</a>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table class="tickets-table">
+                            <thead>
+                                <tr>
+                                    <th>Cliente</th>
+                                    <th>Plano</th>
+                                    <th>Status</th>
+                                    <th>Cadastro</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ticket-title-cell">Marina Ferreira</td>
+                                    <td>Cloud Intermediário</td>
+                                    <td><span class="status-badge status-resolvido">Ativo</span></td>
+                                    <td class="ticket-date-cell">18/09/2026</td>
+                                </tr>
+                                <tr>
+                                    <td class="ticket-title-cell">João Pedro Lima</td>
+                                    <td>Cloud Essencial</td>
+                                    <td><span class="status-badge status-resolvido">Ativo</span></td>
+                                    <td class="ticket-date-cell">17/09/2026</td>
+                                </tr>
+                                <tr>
+                                    <td class="ticket-title-cell">Estúdio Nave</td>
+                                    <td>Cloud Pro</td>
+                                    <td><span class="status-badge status-andamento">Pagamento pendente</span></td>
+                                    <td class="ticket-date-cell">15/09/2026</td>
+                                </tr>
+                                <tr>
+                                    <td class="ticket-title-cell">Camila Rocha</td>
+                                    <td>Cloud Essencial</td>
+                                    <td><span class="status-badge status-resolvido">Ativo</span></td>
+                                    <td class="ticket-date-cell">12/09/2026</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="panel">
+                    <div class="panel-header">
+                        <h2>Chamados Recentes</h2>
+                        <a href="../admin-chamados/index.html" class="panel-link">Ver todos</a>
+                    </div>
+
+                    <ul class="admin-ticket-list">
+                        <li>
+                            <div class="admin-ticket-info">
+                                <strong>#5412 — Erro ao acessar o site</strong>
+                                <span>Alessandro W. · Cloud Intermediário</span>
+                            </div>
+                            <span class="status-badge status-aberto">Aberto</span>
+                        </li>
+                        <li>
+                            <div class="admin-ticket-info">
+                                <strong>#5408 — Instalação de SSL</strong>
+                                <span>Marina Ferreira · Cloud Intermediário</span>
+                            </div>
+                            <span class="status-badge status-andamento">Em andamento</span>
+                        </li>
+                        <li>
+                            <div class="admin-ticket-info">
+                                <strong>#5406 — Dúvida sobre backup</strong>
+                                <span>Estúdio Nave · Cloud Pro</span>
+                            </div>
+                            <span class="status-badge status-aberto">Aberto</span>
+                        </li>
+                        <li>
+                            <div class="admin-ticket-info">
+                                <strong>#5401 — Acesso ao banco de dados</strong>
+                                <span>Camila Rocha · Cloud Essencial</span>
+                            </div>
+                            <span class="status-badge status-resolvido">Resolvido</span>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <section class="panel">
+                <div class="panel-header">
+                    <h2>Ações Rápidas</h2>
+                </div>
+
+                <div class="admin-shortcuts">
+                    <a href="../admin-clientes/index.html" class="shortcut-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Gerenciar Clientes</span>
+                    </a>
+                    <a href="../admin-faturamento/index.html" class="shortcut-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        <span>Ver Faturamento</span>
+                    </a>
+                    <a href="../admin-chamados/index.html" class="shortcut-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <span>Responder Chamados</span>
+                    </a>
+                    <a href="../admin-blog/index.html" class="shortcut-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2">
+                            </path>
+                            <line x1="10" y1="10" x2="18" y2="10"></line>
+                        </svg>
+                        <span>Publicar no Blog</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../../js/supabase.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

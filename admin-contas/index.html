@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas de hospedagem | HallTech Web Hosting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <img src="images/logo.png" alt="HallTech Web Hosting">
+            <span class="admin-badge">ADMIN</span>
+
+            <button class="sidebar-close" id="sidebarClose" aria-label="Fechar menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Visão Geral</span>
+
+                <a href="../dashboard-admin/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="9" rx="1.5"></rect><rect x="14" y="3" width="7" height="5" rx="1.5"></rect><rect x="14" y="12" width="7" height="9" rx="1.5"></rect><rect x="3" y="16" width="7" height="5" rx="1.5"></rect>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Gestão</span>
+
+                <a href="../admin-clientes/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Clientes</span>
+                </a>
+
+                <a href="../admin-servicos/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="6" rx="1.5"></rect><rect x="3" y="14" width="18" height="6" rx="1.5"></rect><line x1="7" y1="7" x2="7.01" y2="7"></line><line x1="7" y1="17" x2="7.01" y2="17"></line>
+                    </svg>
+                    <span>Serviços</span>
+                </a>
+
+                <a href="../admin-dominios/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"></circle><line x1="3" y1="12" x2="21" y2="12"></line><path d="M12 3a13 13 0 0 1 0 18a13 13 0 0 1 0-18Z"></path>
+                    </svg>
+                    <span>Domínios</span>
+                </a>
+
+                <a href="../admin-faturamento/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                    <span>Faturamento</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Contas e hospedagem</span>
+                <a href="../admin-contas/index.html" class="sidebar-link nav-contas active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 8h10M7 12h6M7 16h4"></path></svg>
+                    <span>Contas de hospedagem</span>
+                </a>
+                <a href="../admin-pacotes/index.html" class="sidebar-link nav-pacotes">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"></path><path d="m3 12 9 5 9-5M3 16l9 5 9-5"></path></svg>
+                    <span>Pacotes e recursos</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Suporte</span>
+
+                <a href="../admin-chamados/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>Chamados</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Conteúdo</span>
+
+                <a href="../admin-blog/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><line x1="10" y1="10" x2="18" y2="10"></line><line x1="10" y1="14" x2="18" y2="14"></line>
+                    </svg>
+                    <span>Blog</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Sistema</span>
+
+                <a href="../admin-configuracoes/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"></path>
+                    </svg>
+                    <span>Configurações</span>
+                </a>
+            </div>
+
+        </nav>
+
+        <a href="../landingPage/index.html" class="sidebar-logout" id="sidebarLogout">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+            <span>Sair</span>
+        </a>
+
+    </aside>
+
+    <div class="dashboard-main">
+
+        <header class="dashboard-topbar">
+
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="topbar-search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Buscar clientes, serviços, faturas..." data-global-search aria-label="Buscar nesta página">
+            </div>
+
+            <div class="topbar-user">
+                <div class="user-avatar user-avatar-admin" id="userAvatar">HT</div>
+                <div class="user-info">
+                    <strong id="userName">Equipe HallTech</strong>
+                    <span>Administrador</span>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="dashboard-content">
+<div class="page-heading-row">
+    <div class="dashboard-heading"><span class="dashboard-eyebrow">Painel Administrativo · Hospedagem</span><h1>Contas de hospedagem</h1><p>Gerencie contas, domínios associados, limites e utilização dos recursos.</p></div>
+    <button class="btn-new" type="button" data-action="account.create"><span>＋ Nova conta</span></button>
+</div>
+<div class="summary-grid">
+    <article class="summary-card"><span class="summary-label">Contas cadastradas</span><span class="summary-value">326</span><span class="summary-badge status-resolvido">312 ativas</span></article>
+    <article class="summary-card"><span class="summary-label">Contas suspensas</span><span class="summary-value">14</span><span class="summary-badge status-fechado">Revisar acesso</span></article>
+    <article class="summary-card"><span class="summary-label">Acima da cota</span><span class="summary-value">6</span><span class="summary-badge status-andamento">Uso elevado</span></article>
+    <article class="summary-card"><span class="summary-label">Largura de banda usada</span><span class="summary-value">68%</span><span class="summary-badge status-aberto">3,4 TB / 5 TB</span></article>
+</div>
+<section class="panel account-bandwidth-panel"><div class="panel-header"><div><h2>Utilização de largura de banda</h2><p>Consumo mensal agregado das contas de hospedagem.</p></div><span class="panel-link">Período atual</span></div><div class="bandwidth-total"><strong>3,4 TB</strong><span>de 5 TB disponíveis</span></div><div class="progress-track progress-track-large"><span style="width:68%"></span></div><div class="bandwidth-legend"><span><i class="legend-dot legend-blue"></i> Utilizado: 68%</span><span><i class="legend-dot legend-grey"></i> Disponível: 32%</span></div></section>
+<div class="section-heading-inline"><div><h2>Informações da conta</h2><p>Filtre para visualizar contas, domínios estacionados, subdomínios ou casos que precisam de atenção.</p></div></div>
+<div class="filter-tabs account-filters">
+    <button class="filter-tab active" type="button" data-filter="all">Todas as contas</button>
+    <button class="filter-tab" type="button" data-filter="estacionado">Domínios estacionados</button>
+    <button class="filter-tab" type="button" data-filter="subdominio">Subdomínios</button>
+    <button class="filter-tab" type="button" data-filter="suspensa">Suspensas</button>
+    <button class="filter-tab" type="button" data-filter="cota">Acima da cota</button>
+</div>
+<div class="table-panel"><div class="table-wrapper"><table class="tickets-table" id="accountsTable"><thead><tr><th>Conta / domínio</th><th>Tipo</th><th>Plano</th><th>Uso de disco</th><th>Largura de banda</th><th>Status</th><th>Ações</th></tr></thead><tbody>
+<tr data-kind="conta"><td><strong class="ticket-title-cell">marinaferreira</strong><small class="table-subline">marinaferreira.com.br</small></td><td>Conta principal</td><td>Cloud Intermediário</td><td><div class="quota-cell"><span>18 / 50 GB</span><div class="progress-track"><span style="width:36%"></span></div></div></td><td><div class="quota-cell"><span>230 / 500 GB</span><div class="progress-track"><span style="width:46%"></span></div></div></td><td><span class="status-badge status-resolvido">Ativa</span></td><td><button class="table-action" data-action="account.edit" data-account="marinaferreira">Gerenciar</button></td></tr>
+<tr data-kind="estacionado"><td><strong class="ticket-title-cell">estudionave.com.br</strong><small class="table-subline">Associado a estudionave</small></td><td>Domínio estacionado</td><td>Cloud Pro</td><td>—</td><td>12 / 800 GB</td><td><span class="status-badge status-resolvido">Ativo</span></td><td><button class="table-action" data-action="account.edit" data-account="estudionave.com.br">Gerenciar</button></td></tr>
+<tr data-kind="subdominio"><td><strong class="ticket-title-cell">loja.lojaverde.com.br</strong><small class="table-subline">Conta: lojaverde</small></td><td>Subdomínio</td><td>Cloud Pro</td><td>8 / 100 GB</td><td>92 / 1000 GB</td><td><span class="status-badge status-resolvido">Ativo</span></td><td><button class="table-action" data-action="account.edit" data-account="loja.lojaverde.com.br">Gerenciar</button></td></tr>
+<tr data-kind="suspensa"><td><strong class="ticket-title-cell">rafaelalmeida</strong><small class="table-subline">rafaelalmeida.com.br</small></td><td>Conta principal</td><td>Cloud Essencial</td><td>12 / 20 GB</td><td>0 / 200 GB</td><td><span class="status-badge status-fechado">Suspensa</span></td><td><button class="table-action" data-action="account.suspension" data-account="rafaelalmeida">Gerenciar</button></td></tr>
+<tr data-kind="cota"><td><strong class="ticket-title-cell">lojaverde</strong><small class="table-subline">lojaverde.com.br</small></td><td>Conta principal</td><td>Cloud Pro</td><td><div class="quota-cell"><span>112 / 100 GB</span><div class="progress-track progress-danger"><span style="width:100%"></span></div></div></td><td>780 / 1000 GB</td><td><span class="status-badge status-andamento">Acima da cota</span></td><td><button class="table-action" data-action="account.quota" data-account="lojaverde">Ajustar cota</button></td></tr>
+<tr data-kind="suspensa"><td><strong class="ticket-title-cell">alessandrow</strong><small class="table-subline">alessandrow.com.br</small></td><td>Conta principal</td><td>Cloud Intermediário</td><td>22 / 50 GB</td><td>0 / 500 GB</td><td><span class="status-badge status-fechado">Suspensa</span></td><td><button class="table-action" data-action="account.suspension" data-account="alessandrow">Gerenciar</button></td></tr>
+<tr data-kind="cota"><td><strong class="ticket-title-cell">blogdacamila</strong><small class="table-subline">blogdacamila.com.br</small></td><td>Conta principal</td><td>Cloud Essencial</td><td><div class="quota-cell"><span>22 / 20 GB</span><div class="progress-track progress-danger"><span style="width:100%"></span></div></div></td><td>165 / 200 GB</td><td><span class="status-badge status-andamento">Acima da cota</span></td><td><button class="table-action" data-action="account.quota" data-account="blogdacamila">Ajustar cota</button></td></tr>
+</tbody></table></div></div>
+<section class="panel account-tools"><div class="panel-header"><div><h2>Funções da conta</h2><p>Ações administrativas rápidas para as contas de hospedagem.</p></div></div><div class="action-grid">
+<button class="action-tile" data-action="account.create"><span class="action-tile-icon">＋</span><strong>Criar uma nova conta</strong><small>Cadastrar hospedagem e domínio</small></button>
+<button class="action-tile" data-action="account.force-password"><span class="action-tile-icon">↻</span><strong>Forçar alteração de senha</strong><small>Exigir nova senha no próximo acesso</small></button>
+<button class="action-tile" data-action="account.bandwidth"><span class="action-tile-icon">⇅</span><strong>Limitar largura de banda</strong><small>Definir limite mensal</small></button>
+<button class="action-tile" data-action="account.suspension"><span class="action-tile-icon">Ⅱ</span><strong>Gerenciar suspensão</strong><small>Suspender ou reativar acesso</small></button>
+<button class="action-tile" data-action="account.edit"><span class="action-tile-icon">✎</span><strong>Modificar uma conta</strong><small>Editar dados e pacote</small></button>
+<button class="action-tile" data-action="account.password"><span class="action-tile-icon">⌁</span><strong>Modificação de senha</strong><small>Definir uma nova senha</small></button>
+<button class="action-tile" data-action="account.quota"><span class="action-tile-icon">▤</span><strong>Modificação de cota</strong><small>Ajustar espaço em disco</small></button>
+<button class="action-tile" data-action="account.upgrade"><span class="action-tile-icon">↗</span><strong>Upgrade / downgrade</strong><small>Trocar o plano da conta</small></button>
+<button class="action-tile" data-action="account.web-template"><span class="action-tile-icon">⌘</span><strong>Editor do modelo da Web</strong><small>Configurar página padrão</small></button>
+<button class="action-tile action-tile-danger" data-action="account.terminate"><span class="action-tile-icon">×</span><strong>Terminate Accounts</strong><small>Encerrar uma conta permanentemente</small></button>
+</div></section>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

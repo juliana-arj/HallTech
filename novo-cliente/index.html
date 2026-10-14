@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo cliente | HallTech Web Hosting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <img src="images/logo.png" alt="HallTech Web Hosting">
+            <span class="admin-badge">ADMIN</span>
+
+            <button class="sidebar-close" id="sidebarClose" aria-label="Fechar menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Visão Geral</span>
+
+                <a href="../dashboard-admin/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="9" rx="1.5"></rect><rect x="14" y="3" width="7" height="5" rx="1.5"></rect><rect x="14" y="12" width="7" height="9" rx="1.5"></rect><rect x="3" y="16" width="7" height="5" rx="1.5"></rect>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Gestão</span>
+
+                <a href="../admin-clientes/index.html" class="sidebar-link active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Clientes</span>
+                </a>
+
+                <a href="../admin-servicos/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="6" rx="1.5"></rect><rect x="3" y="14" width="18" height="6" rx="1.5"></rect><line x1="7" y1="7" x2="7.01" y2="7"></line><line x1="7" y1="17" x2="7.01" y2="17"></line>
+                    </svg>
+                    <span>Serviços</span>
+                </a>
+
+                <a href="../admin-dominios/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"></circle><line x1="3" y1="12" x2="21" y2="12"></line><path d="M12 3a13 13 0 0 1 0 18a13 13 0 0 1 0-18Z"></path>
+                    </svg>
+                    <span>Domínios</span>
+                </a>
+
+                <a href="../admin-faturamento/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                    <span>Faturamento</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Contas e hospedagem</span>
+                <a href="../admin-contas/index.html" class="sidebar-link nav-contas">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 8h10M7 12h6M7 16h4"></path></svg>
+                    <span>Contas de hospedagem</span>
+                </a>
+                <a href="../admin-pacotes/index.html" class="sidebar-link nav-pacotes">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"></path><path d="m3 12 9 5 9-5M3 16l9 5 9-5"></path></svg>
+                    <span>Pacotes e recursos</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Suporte</span>
+
+                <a href="../admin-chamados/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>Chamados</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Conteúdo</span>
+
+                <a href="../admin-blog/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><line x1="10" y1="10" x2="18" y2="10"></line><line x1="10" y1="14" x2="18" y2="14"></line>
+                    </svg>
+                    <span>Blog</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Sistema</span>
+
+                <a href="../admin-configuracoes/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"></path>
+                    </svg>
+                    <span>Configurações</span>
+                </a>
+            </div>
+
+        </nav>
+
+        <a href="../landingPage/index.html" class="sidebar-logout" id="sidebarLogout">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+            <span>Sair</span>
+        </a>
+
+    </aside>
+
+    <div class="dashboard-main">
+
+        <header class="dashboard-topbar">
+
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="topbar-search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Buscar clientes, serviços, faturas..." data-global-search aria-label="Buscar nesta página">
+            </div>
+
+            <div class="topbar-user">
+                <div class="user-avatar user-avatar-admin" id="userAvatar">HT</div>
+                <div class="user-info">
+                    <strong id="userName">Equipe HallTech</strong>
+                    <span>Administrador</span>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="dashboard-content">
+<div class="page-heading-row"><div class="dashboard-heading"><span class="dashboard-eyebrow">Clientes · Cadastro</span><h1>Novo cliente</h1><p>Cadastre os dados do cliente e os detalhes iniciais do serviço contratado.</p></div><a href="../admin-clientes/index.html" class="btn btn-outline">← Voltar para clientes</a></div>
+<form class="panel form-panel demo-form" id="newClientForm" data-success="Cliente cadastrado no protótipo! Os dados não foram enviados para um servidor."><div class="panel-header"><div><h2>Dados do cliente</h2><p>Preencha as informações de contato e cobrança.</p></div><span class="form-step-label">Etapa 1 de 2</span></div><div class="form-grid"><div class="form-group"><label for="clientType">Tipo de cliente</label><select id="clientType" class="form-select" required><option value="">Selecione</option><option>Pessoa física</option><option>Pessoa jurídica</option></select></div><div class="form-group"><label for="clientName">Nome completo / Razão social</label><input class="form-input" id="clientName" required placeholder="Ex.: Marina Ferreira"></div><div class="form-group"><label for="clientDocument">CPF / CNPJ</label><input class="form-input" id="clientDocument" placeholder="000.000.000-00"></div><div class="form-group"><label for="clientEmail">E-mail</label><input class="form-input" id="clientEmail" type="email" required placeholder="nome@empresa.com.br"></div><div class="form-group"><label for="clientPhone">Telefone</label><input class="form-input" id="clientPhone" placeholder="(11) 99999-9999"></div><div class="form-group"><label for="clientStatus">Status inicial</label><select class="form-select" id="clientStatus"><option>Ativo</option><option>Aguardando pagamento</option><option>Inativo</option></select></div></div><div class="form-divider"></div><div class="panel-header"><div><h2>Serviço inicial</h2><p>Vincule um plano e, se já tiver, o domínio principal.</p></div><span class="form-step-label">Etapa 2 de 2</span></div><div class="form-grid"><div class="form-group"><label for="clientPlan">Plano</label><select class="form-select" id="clientPlan" required><option value="">Selecione um pacote</option><option>Cloud Essencial</option><option>Cloud Intermediário</option><option>Cloud Pro</option><option>Sem serviço por enquanto</option></select></div><div class="form-group"><label for="clientDomain">Domínio principal</label><input class="form-input" id="clientDomain" placeholder="exemplo.com.br"></div><div class="form-group"><label for="clientBilling">Ciclo de cobrança</label><select class="form-select" id="clientBilling"><option>Mensal</option><option>Trimestral</option><option>Anual</option></select></div><div class="form-group"><label for="clientNotes">Observações</label><input class="form-input" id="clientNotes" placeholder="Informações importantes (opcional)"></div></div><div class="form-actions form-actions-separated"><a href="../admin-clientes/index.html" class="btn btn-outline">Cancelar</a><button class="btn btn-primary" type="submit">Cadastrar cliente</button></div></form>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

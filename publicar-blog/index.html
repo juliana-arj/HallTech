@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar no blog | HallTech Web Hosting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <img src="images/logo.png" alt="HallTech Web Hosting">
+            <span class="admin-badge">ADMIN</span>
+
+            <button class="sidebar-close" id="sidebarClose" aria-label="Fechar menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Visão Geral</span>
+
+                <a href="../dashboard-admin/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="9" rx="1.5"></rect><rect x="14" y="3" width="7" height="5" rx="1.5"></rect><rect x="14" y="12" width="7" height="9" rx="1.5"></rect><rect x="3" y="16" width="7" height="5" rx="1.5"></rect>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Gestão</span>
+
+                <a href="../admin-clientes/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Clientes</span>
+                </a>
+
+                <a href="../admin-servicos/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="6" rx="1.5"></rect><rect x="3" y="14" width="18" height="6" rx="1.5"></rect><line x1="7" y1="7" x2="7.01" y2="7"></line><line x1="7" y1="17" x2="7.01" y2="17"></line>
+                    </svg>
+                    <span>Serviços</span>
+                </a>
+
+                <a href="../admin-dominios/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"></circle><line x1="3" y1="12" x2="21" y2="12"></line><path d="M12 3a13 13 0 0 1 0 18a13 13 0 0 1 0-18Z"></path>
+                    </svg>
+                    <span>Domínios</span>
+                </a>
+
+                <a href="../admin-faturamento/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                    <span>Faturamento</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Contas e hospedagem</span>
+                <a href="../admin-contas/index.html" class="sidebar-link nav-contas">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 8h10M7 12h6M7 16h4"></path></svg>
+                    <span>Contas de hospedagem</span>
+                </a>
+                <a href="../admin-pacotes/index.html" class="sidebar-link nav-pacotes">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"></path><path d="m3 12 9 5 9-5M3 16l9 5 9-5"></path></svg>
+                    <span>Pacotes e recursos</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Suporte</span>
+
+                <a href="../admin-chamados/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>Chamados</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Conteúdo</span>
+
+                <a href="../admin-blog/index.html" class="sidebar-link active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><line x1="10" y1="10" x2="18" y2="10"></line><line x1="10" y1="14" x2="18" y2="14"></line>
+                    </svg>
+                    <span>Blog</span>
+                </a>
+            </div>
+
+            <div class="sidebar-group">
+                <span class="sidebar-group-title">Sistema</span>
+
+                <a href="../admin-configuracoes/index.html" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"></path>
+                    </svg>
+                    <span>Configurações</span>
+                </a>
+            </div>
+
+        </nav>
+
+        <a href="../landingPage/index.html" class="sidebar-logout" id="sidebarLogout">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+            <span>Sair</span>
+        </a>
+
+    </aside>
+
+    <div class="dashboard-main">
+
+        <header class="dashboard-topbar">
+
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="topbar-search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Buscar clientes, serviços, faturas..." data-global-search aria-label="Buscar nesta página">
+            </div>
+
+            <div class="topbar-user">
+                <div class="user-avatar user-avatar-admin" id="userAvatar">HT</div>
+                <div class="user-info">
+                    <strong id="userName">Equipe HallTech</strong>
+                    <span>Administrador</span>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="dashboard-content">
+<div class="page-heading-row"><div class="dashboard-heading"><span class="dashboard-eyebrow">Conteúdo · Blog</span><h1>Publicar no blog</h1><p>Crie um novo artigo para compartilhar novidades e dicas sobre tecnologia.</p></div><a href="../admin-blog/index.html" class="btn btn-outline">← Voltar para o blog</a></div>
+<div class="publish-layout"><form class="panel form-panel demo-form" id="publishForm" data-success="Artigo salvo no protótipo! Ele não foi publicado em um site real."><div class="panel-header"><div><h2>Conteúdo do artigo</h2><p>Os campos com * são obrigatórios.</p></div></div><div class="form-group"><label for="postTitle">Título do artigo *</label><input class="form-input" id="postTitle" required placeholder="Ex.: Sua nuvem está segura mesmo?"><small class="field-hint">Use um título claro e objetivo.</small></div><div class="form-grid"><div class="form-group"><label for="postCategory">Categoria *</label><select id="postCategory" class="form-select" required><option value="">Selecione</option><option>Segurança</option><option>Cloud Computing</option><option>Tecnologia</option><option>Novidades HallTech</option><option>Tutoriais</option></select></div><div class="form-group"><label for="postStatus">Publicação</label><select id="postStatus" class="form-select"><option>Publicar agora</option><option>Salvar como rascunho</option><option>Agendar publicação</option></select></div></div><div class="form-group"><label for="postExcerpt">Resumo *</label><textarea class="form-input textarea-input" id="postExcerpt" rows="3" required placeholder="Um resumo curto que aparecerá na listagem do blog."></textarea></div><div class="form-group"><label for="postCover">URL da imagem de capa</label><input class="form-input" id="postCover" type="url" placeholder="https://..."></div><div class="form-group"><label for="postBody">Texto do artigo *</label><textarea class="form-input textarea-input post-body-input" id="postBody" rows="12" required placeholder="Comece a escrever o conteúdo do artigo..."></textarea></div><div class="form-actions form-actions-separated"><button type="button" class="btn btn-outline" data-action="blog.preview">Visualizar prévia</button><button type="submit" class="btn btn-primary">Salvar artigo</button></div></form><aside class="panel publish-tips"><div class="publish-preview-mark">✎</div><h2>Dicas para publicar</h2><p>Um bom artigo é útil, fácil de ler e está alinhado com os serviços da HallTech.</p><div class="tip-row"><span>01</span><div><strong>Explique o benefício</strong><small>Mostre como a dica resolve uma necessidade real.</small></div></div><div class="tip-row"><span>02</span><div><strong>Use parágrafos curtos</strong><small>Separe o conteúdo em ideias simples.</small></div></div><div class="tip-row"><span>03</span><div><strong>Revise antes de publicar</strong><small>Confira os links, o resumo e o título.</small></div></div><div id="blogPreview" class="blog-preview" hidden><span>Prévia do artigo</span><h3 id="previewTitle"></h3><p id="previewExcerpt"></p></div></aside></div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
