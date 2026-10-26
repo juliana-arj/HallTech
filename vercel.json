@@ -2,19 +2,19 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/landingPage/index.html"
+      "destination": "/landing/landingPage/index.html"
     },
     {
       "source": "/style.css",
-      "destination": "/landingPage/style.css"
+      "destination": "/landing/landingPage/style.css"
     },
     {
       "source": "/script.js",
-      "destination": "/landingPage/script.js"
+      "destination": "/landing/landingPage/script.js"
     },
     {
       "source": "/images/:path*",
-      "destination": "/landingPage/images/:path*"
+      "destination": "/landing/landingPage/images/:path*"
     }
   ]
 }
