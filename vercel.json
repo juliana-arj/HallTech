@@ -13,6 +13,10 @@
       "destination": "/landing/landingPage/script.js"
     },
     {
+      "source": "/nav.js",
+      "destination": "/landing/nav.js"
+    },
+    {
       "source": "/images/:path*",
       "destination": "/landing/landingPage/images/:path*"
     }
