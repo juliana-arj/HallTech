@@ -1,0 +1,79 @@
+
+/* Estilos específicos da página */
+.inline-style-1 {
+    width: 100%;
+    max-width: 680px;
+    margin: 0;
+}
+
+.inline-style-2,
+.inline-style-4,
+.inline-style-12 {
+    margin-bottom: 28px;
+}
+
+.inline-style-3 {
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
+.inline-style-4 {
+    background: var(--bg);
+    border: none;
+}
+
+.inline-style-5 {
+    margin-bottom: 16px;
+}
+
+.inline-style-6 {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.inline-style-7,
+.inline-style-9 {
+    font-weight: 600;
+}
+
+.inline-style-8 {
+    padding: 10px 0;
+}
+
+.inline-style-10 {
+    font-weight: 700;
+}
+
+.inline-style-11 {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--blue-700);
+}
+
+.inline-style-13,
+.inline-style-14 {
+    margin-bottom: 6px;
+}
+
+.inline-style-15 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.inline-style-16 {
+    display: flex;
+    gap: 12px;
+}
+
+.inline-style-17,
+.inline-style-18 {
+    flex: 1;
+}
+
+.dashboard-content {
+    width: 100%;
+    max-width: 1368px;
+    padding: 46px 44px 60px;
+}
+
+

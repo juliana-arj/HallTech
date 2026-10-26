@@ -1,0 +1,19 @@
+
+.inline-style-1 {
+    max-width:760px;
+}
+
+.inline-style-2 {
+    display:flex; 
+    gap:12px; 
+    justify-content:flex-end;
+}
+
+.dashboard-content { 
+    width:100%; 
+    max-width:1368px; 
+    padding:46px 44px 60px; 
+}
+
+
+

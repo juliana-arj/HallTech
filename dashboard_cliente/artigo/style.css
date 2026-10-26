@@ -1,0 +1,80 @@
+
+
+/* =========================================================
+   ESTILOS ESPECÍFICOS DA PÁGINA ARTIGO
+========================================================= */
+
+.inline-style-1 {
+    max-width: 760px;
+}
+
+.inline-style-2 {
+    margin-bottom: 16px;
+}
+
+.inline-style-3 {
+    color: var(--blue-700);
+    font-weight: 600;
+}
+
+.inline-style-4 {
+    font-size: 24px;
+    margin: 16px 0 12px;
+}
+
+.inline-style-5 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 28px;
+}
+
+.inline-style-6 {
+    background: var(--blue-50);
+    border: none;
+    margin-bottom: 28px;
+}
+
+.inline-style-7 {
+    color: var(--blue-900);
+}
+
+.inline-style-8 {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.inline-style-9 {
+    margin-bottom: 12px;
+}
+
+.inline-style-10 {
+    margin-bottom: 20px;
+}
+
+.inline-style-11 {
+    margin-bottom: 12px;
+}
+
+.inline-style-12 {
+    margin-bottom: 20px;
+}
+
+.inline-style-13 {
+    margin-bottom: 12px;
+}
+
+.inline-style-14 {
+    margin-bottom: 20px;
+}
+
+.inline-style-15 {
+    margin: 24px 0;
+}
+
+.inline-style-16 {
+    display: flex;
+    gap: 10px;
+}
+
+

@@ -1,0 +1,64 @@
+
+.inline-style-1 {
+    max-width: 760px;
+}
+
+.inline-style-2 {
+    margin-bottom: 24px;
+}
+
+.inline-style-3 {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.inline-style-4 {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.inline-style-5 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.inline-style-6 {
+    width: 180px;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.inline-style-7 {
+    padding: 14px 0;
+}
+
+.inline-style-8 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.inline-style-9 {
+    width: 180px;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.inline-style-10 {
+    margin-top: 24px;
+    border-color: var(--danger);
+}
+
+.inline-style-11 {
+    color: var(--danger);
+    margin-bottom: 6px;
+}
+
+.inline-style-12 {
+    margin-bottom: 16px;
+}
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HallTech — Pagamento aprovado</title>
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="frame">
+    <div id="site-navbar" class="ht-navbar-slot"></div>
+
+    <div class="container-narrow" style="width:100%; max-width:640px;">
+      <div class="card card-pad" style="padding:56px 48px;">
+        <div class="status-block" style="padding:0;">
+          <div class="status-icon success">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6 9 17l-5-5" />
+            </svg>
+          </div>
+
+          <h1 style="font-size:26px; margin-bottom:10px;">Pagamento aprovado!</h1>
+          <p class="muted" style="margin-bottom:32px;">
+            Recebemos a confirmação do seu pagamento. Confira os detalhes do seu pedido abaixo.
+          </p>
+
+          <div class="card card-pad"
+            style="width:100%; text-align:left; background:var(--bg); border:none; margin-bottom:28px;">
+
+            <div class="row-between small" style="margin-bottom:12px; gap:16px;">
+              <span class="muted">Número do pedido</span>
+              <span id="pedido-numero" style="font-weight:700;">Carregando...</span>
+            </div>
+
+            <div class="small" style="margin-bottom:16px;">
+              <span class="muted">Serviços contratados</span>
+              <div id="pedido-itens" style="font-weight:700; margin-top:8px;">
+                Carregando...
+              </div>
+            </div>
+
+            <div class="row-between small" style="gap:16px;">
+              <span class="muted">Valor total</span>
+              <span id="pedido-total" style="font-weight:700; color:var(--success);">
+                Carregando...
+              </span>
+            </div>
+          </div>
+
+          <p id="pedido-mensagem" class="small muted" style="margin-bottom:20px;" aria-live="polite"></p>
+
+          <a class="btn btn-primary btn-block" href="../../dashboard_cliente/index/index.html">Ir para o
+            Dashboard</a>
+
+          <button id="pedido-comprovante" class="small"
+            style="background:none; border:none; color:var(--blue-700); font-weight:600; margin-top:16px; cursor:pointer;">
+            Imprimir comprovante
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      © 2026 HallTech. Todos os direitos reservados.
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../../js/supabase.js"></script>
+  <script src="script.js"></script>
+  <script src="../nav.js" defer></script>

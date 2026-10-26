@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>HallTech — Blog — Nenhum resultado</title>
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="frame">
+
+    <div id="site-navbar" class="ht-navbar-slot"></div>
+
+
+
+    <section class="section-hero">
+      <div class="section-hero-inner">
+        <div class="section-hero-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg></div>
+        <div>
+          <h1>Resultado da pesquisa</h1>
+          <p>Exibindo resultados para <strong style="color:var(--blue-700);">"xyz123"</strong></p>
+        </div>
+      </div>
+    </section>
+    <div class="container" style="padding-top:20px;">
+      <div style="max-width:640px; margin:0 auto 12px;">
+        <div class="card" style="display:flex; align-items:center; gap:10px; padding:14px 18px; border-radius:28px;">
+          <span style="color:var(--text-soft);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg></span>
+          <input value="xyz123" style="border:none; outline:none; flex:1; font-size:15px;">
+        </div>
+      </div>
+
+      <div class="status-block" style="max-width:480px; margin:0 auto;">
+        <div class="status-icon neutral"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg></div>
+        <h2 style="margin-bottom:10px;">Nenhum resultado encontrado</h2>
+        <p class="muted" style="margin-bottom:28px;">Não encontramos nenhuma notícia para essa busca. Tente usar outras
+          palavras-chave ou explore os temas abaixo.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:28px;">
+          <span class="filter-pill">Tecnologia</span>
+          <span class="filter-pill">Infraestrutura</span>
+          <span class="filter-pill">Segurança</span>
+          <span class="filter-pill">Tutoriais</span>
+        </div>
+        <button class="btn btn-primary">Voltar para todos os artigos</button>
+      </div>
+    </div>
+
+    <footer class="site-footer">© 2026 HallTech. Todos os direitos reservados. — Wireframe visual para handoff Figma.
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../../js/supabase.js"></script>
+  <script src="script.js"></script>
+  <script src="../nav.js" defer></script>
+  <script src="../global.js" defer></script>
+</body>
+
+</html>

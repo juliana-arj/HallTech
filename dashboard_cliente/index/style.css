@@ -1,0 +1,305 @@
+
+
+/* Estilos específicos da página */
+
+/* Cards e cabeçalhos */
+.inline-style-1,
+.inline-style-23 {
+    margin-bottom: 24px;
+}
+
+.inline-style-2,
+.inline-style-7,
+.inline-style-12,
+.inline-style-17 {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.inline-style-3,
+.inline-style-8,
+.inline-style-13,
+.inline-style-18 {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    background: var(--blue-50);
+    color: var(--blue-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.inline-style-4,
+.inline-style-9,
+.inline-style-14,
+.inline-style-19 {
+    margin-bottom: 4px;
+}
+
+.inline-style-5,
+.inline-style-10,
+.inline-style-15,
+.inline-style-20 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.inline-style-6,
+.inline-style-11,
+.inline-style-16,
+.inline-style-21 {
+    color: var(--blue-700);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.inline-style-22 {
+    grid-template-columns: 1fr 340px;
+    margin-bottom: 24px;
+}
+
+/* Títulos e espaçamentos */
+.inline-style-24,
+.inline-style-41 {
+    font-size: 18px;
+}
+
+.inline-style-41,
+.inline-style-62 {
+    margin-bottom: 18px;
+}
+
+.inline-style-28,
+.inline-style-35 {
+    margin-bottom: 8px;
+}
+
+.inline-style-29,
+.inline-style-36 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.inline-style-51,
+.inline-style-70 {
+    margin-bottom: 16px;
+}
+
+.inline-style-52,
+.inline-style-71 {
+    font-size: 16px;
+}
+
+.inline-style-63 {
+    margin-bottom: 6px;
+}
+
+.inline-style-64 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.inline-style-65 {
+    margin-bottom: 12px;
+}
+
+.inline-style-66 {
+    margin-bottom: 20px;
+}
+
+.inline-style-67 {
+    margin-bottom: 14px;
+}
+
+.inline-style-68,
+.inline-style-39 {
+    text-align: center;
+}
+
+/* Barras de progresso */
+.inline-style-25,
+.inline-style-32 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.inline-style-26,
+.inline-style-33 {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--blue-50);
+    color: var(--blue-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.inline-style-27,
+.inline-style-34 {
+    flex: 1;
+}
+
+.inline-style-30 {
+    width: 75%;
+    background: var(--blue-700);
+}
+
+.inline-style-37 {
+    width: 40%;
+    background: var(--blue-700);
+}
+
+.inline-style-31,
+.inline-style-38 {
+    font-size: 15px;
+    font-weight: 700;
+    width: 40px;
+    text-align: right;
+}
+
+.inline-style-39 {
+    margin-top: 8px;
+}
+
+/* Cores de destaque */
+.inline-style-40,
+.inline-style-44,
+.inline-style-47,
+.inline-style-50,
+.inline-style-53,
+.inline-style-69,
+.inline-style-72 {
+    color: var(--blue-700);
+}
+
+.inline-style-40,
+.inline-style-53,
+.inline-style-69,
+.inline-style-72 {
+    font-weight: 600;
+}
+
+/* Cards informativos */
+.inline-style-42,
+.inline-style-45,
+.inline-style-48 {
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.inline-style-43,
+.inline-style-46,
+.inline-style-49 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--blue-700);
+}
+
+/* Listas e informações */
+.inline-style-54,
+.inline-style-56,
+.inline-style-58 {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.inline-style-55,
+.inline-style-57,
+.inline-style-59,
+.inline-style-61 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 4px 0 2px;
+}
+
+.inline-style-60 {
+    padding-top: 14px;
+}
+
+.inline-style-73,
+.inline-style-79,
+.inline-style-85,
+.inline-style-91 {
+    display: flex;
+    gap: 10px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.inline-style-74,
+.inline-style-80,
+.inline-style-86,
+.inline-style-92 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.inline-style-74 {
+    background: var(--success);
+}
+
+.inline-style-80,
+.inline-style-92 {
+    background: var(--blue-700);
+}
+
+.inline-style-86 {
+    background: var(--warning);
+}
+
+.inline-style-75,
+.inline-style-81,
+.inline-style-87,
+.inline-style-93 {
+    flex: 1;
+}
+
+.inline-style-76,
+.inline-style-82,
+.inline-style-88,
+.inline-style-94 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.inline-style-77,
+.inline-style-83,
+.inline-style-89,
+.inline-style-95 {
+    white-space: nowrap;
+    margin-left: 12px;
+}
+
+.inline-style-78,
+.inline-style-84,
+.inline-style-90,
+.inline-style-96 {
+    margin-top: 2px;
+}
+
+/* Dashboard */
+.dashboard-content {
+    width: 100%;
+    max-width: 1368px;
+    padding: 46px 44px 60px;
+}
+

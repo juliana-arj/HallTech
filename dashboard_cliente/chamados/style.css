@@ -1,0 +1,108 @@
+
+/* =========================================================
+   ESTILOS ESPECÍFICOS — CHAMADOS
+========================================================= */
+
+.inline-style-1 {
+    grid-template-columns: 1fr 320px;
+}
+
+.inline-style-2 {
+    margin-bottom: 24px;
+}
+
+.inline-style-3 {
+    margin-bottom: 24px;
+}
+
+.inline-style-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 18px;
+}
+
+.inline-style-5 {
+    margin-bottom: 6px;
+}
+
+.inline-style-6 {
+    background: var(--blue-700);
+    color: #fff;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 14px;
+    max-width: 520px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.inline-style-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+.inline-style-8 {
+    margin-bottom: 6px;
+}
+
+.inline-style-9 {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 14px 18px;
+    border-radius: 14px;
+    max-width: 520px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.inline-style-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 18px;
+}
+
+.inline-style-11 {
+    margin-bottom: 6px;
+}
+
+.inline-style-12 {
+    background: var(--blue-700);
+    color: #fff;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 14px;
+    max-width: 520px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.inline-style-13 {
+    margin-top: 28px;
+}
+
+.inline-style-14 {
+    height: 90px;
+}
+
+.inline-style-15 {
+    text-align: right;
+    margin-top: 12px;
+}
+
+.inline-style-16 {
+    margin-bottom: 18px;
+}
+
+.inline-style-17 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+

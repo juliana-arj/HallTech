@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HallTech — Checkout</title>
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="frame">
+
+    <div id="site-navbar" class="ht-navbar-slot"></div>
+
+
+
+    <div class="container-narrow" style="width:100%; max-width:1040px;">
+      <h1 style="text-align:center; margin-bottom:8px;">Finalizar contratação</h1>
+      <p class="muted" style="text-align:center; margin-bottom:36px;">Confira seus dados e escolha a forma de pagamento.
+      </p>
+
+      <div class="stepper">
+        <div class="step done">
+          <div class="step-num"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6 9 17l-5-5" />
+            </svg></div>
+          <div class="step-label">Dados do cliente</div>
+        </div>
+        <div class="step-line"></div>
+        <div class="step done">
+          <div class="step-num"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6 9 17l-5-5" />
+            </svg></div>
+          <div class="step-label">Cobrança</div>
+        </div>
+        <div class="step-line"></div>
+        <div class="step active">
+          <div class="step-num">3</div>
+          <div class="step-label">Pagamento</div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="grid-template-columns:1fr 380px;">
+        <div>
+          <div class="card card-pad" style="margin-bottom:24px;">
+            <h2>Dados do cliente</h2>
+            <div class="field-row">
+              <div class="field">
+                <label for="cliente-nome">Nome completo</label>
+                <input id="cliente-nome" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="cliente-documento">CPF/CNPJ</label>
+                <input id="cliente-documento" type="text" autocomplete="off">
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cliente-email">E-mail</label>
+                <input id="cliente-email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="cliente-telefone">Telefone</label>
+                <input id="cliente-telefone" type="tel" autocomplete="tel">
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-pad" style="margin-bottom:24px;">
+            <h2>Dados de cobrança</h2>
+            <div class="field-row-3">
+              <div class="field">
+                <label for="cobranca-cep">CEP</label>
+                <input id="cobranca-cep" type="text" autocomplete="postal-code">
+              </div>
+              <div class="field" style="grid-column:span 2;">
+                <label for="cobranca-endereco">Endereço</label>
+                <input id="cobranca-endereco" type="text" autocomplete="street-address">
+              </div>
+            </div>
+            <div class="field-row-3">
+              <div class="field">
+                <label for="cobranca-bairro">Bairro</label>
+                <input id="cobranca-bairro" type="text">
+              </div>
+              <div class="field">
+                <label for="cobranca-cidade">Cidade</label>
+                <input id="cobranca-cidade" type="text" autocomplete="address-level2">
+              </div>
+              <div class="field">
+                <label for="cobranca-estado">Estado</label>
+                <input id="cobranca-estado" type="text" autocomplete="address-level1">
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-pad">
+            <h2>Pagamento</h2>
+            <div style="display:flex; gap:12px; margin-bottom:20px;">
+              <div class="card"
+                style="flex:1; padding:16px; text-align:center; border-color:var(--blue-700); background:var(--blue-50); display:flex; flex-direction:column; align-items:center; gap:8px; color:var(--blue-700); font-weight:600;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="4" width="22" height="16" rx="2" />
+                  <path d="M1 10h22" />
+                </svg> Cartão
+              </div>
+              <div class="card"
+                style="flex:1; padding:16px; text-align:center; display:flex; flex-direction:column; align-items:center; gap:8px; color:var(--text-muted); font-weight:600;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2 2 12l10 10 10-10L12 2Z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg> PIX
+              </div>
+              <div class="card"
+                style="flex:1; padding:16px; text-align:center; display:flex; flex-direction:column; align-items:center; gap:8px; color:var(--text-muted); font-weight:600;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 5v14M7 5v14M11 5v14M15 5v9M19 5v14" />
+                </svg> Boleto
+              </div>
+            </div>
+            <div class="field">
+              <label for="cartao-numero">Número do cartão</label>
+              <input id="cartao-numero" type="text" inputmode="numeric" autocomplete="cc-number"
+                placeholder="Número do cartão">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cartao-validade">Validade</label>
+                <input id="cartao-validade" type="text" autocomplete="cc-exp" placeholder="MM/AA">
+              </div>
+              <div class="field">
+                <label for="cartao-cvv">CVV</label>
+                <input id="cartao-cvv" type="password" inputmode="numeric" autocomplete="cc-csc" placeholder="CVV">
+              </div>
+            </div>
+            <div class="field">
+              <label for="cartao-nome">Nome impresso no cartão</label>
+              <input id="cartao-nome" type="text" autocomplete="cc-name" placeholder="Nome no cartão">
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card card-pad" style="position:sticky; top:24px;">
+            <h3 style="margin-bottom:18px;">Resumo da contratação</h3>
+            <div id="checkout-items"></div>
+            <div class="divider"></div>
+            <div class="row-between" style="margin-bottom:24px;">
+              <span style="font-weight:700;">Total</span>
+              <span id="checkout-total" style="font-weight:700; font-size:22px; color:var(--blue-700);">R$ 0,00</span>
+            </div>
+            <a class="btn btn-primary btn-block" id="checkout-confirm" href="pagamento-aprovado.html">Confirmar
+              pagamento</a>
+            <div class="small muted"
+              style="display:flex; align-items:center; gap:6px; justify-content:center; margin-top:14px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              Ambiente seguro e criptografado
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">© 2026 HallTech. Todos os direitos reservados. — Wireframe visual para handoff Figma.
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../../js/supabase.js"></script>
+  <script src="script.js"></script>
+  <script src="../nav.js" defer></script>
+  <script src="../global.js" defer></script>
+</body>
+
+</html>

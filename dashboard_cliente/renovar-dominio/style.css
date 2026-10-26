@@ -1,0 +1,130 @@
+
+.renewal-heading {
+    margin-bottom: 34px;
+}
+
+.renewal-content {
+    width: 100%;
+    max-width: 720px;
+}
+
+.renewal-period-card {
+    margin-bottom: 18px;
+}
+
+.renewal-period-card h3 {
+    margin-bottom: 20px;
+}
+
+.period-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.period-option {
+    width: 100%;
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: #fff;
+    cursor: pointer;
+    transition: border-color .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+.period-option:hover {
+    border-color: rgba(7, 91, 234, .35);
+}
+
+.period-option.selected {
+    border-color: rgba(7, 91, 234, .45);
+    background: var(--blue-50);
+    box-shadow: 0 2px 8px rgba(7, 91, 234, .06);
+}
+
+.period-info {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.period-info input {
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    accent-color: var(--blue);
+    flex-shrink: 0;
+}
+
+.period-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.period-price {
+    flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.renewal-total-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.renewal-total-row {
+    min-height: 34px;
+}
+
+.renewal-total-row span {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.renewal-total-row strong {
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.renewal-total-card .btn {
+    min-height: 48px;
+}
+
+@media (max-width: 767px) {
+    .renewal-heading {
+        margin-bottom: 28px;
+    }
+
+    .renewal-content {
+        max-width: none;
+    }
+
+    .period-option {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .period-option {
+        padding: 13px 14px;
+    }
+
+    .period-info {
+        gap: 8px;
+    }
+
+    .period-price {
+        font-size: 14px;
+    }
+}

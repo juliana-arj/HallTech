@@ -1,0 +1,99 @@
+/* Estilos específicos da página */
+
+/* Link de retorno */
+.inline-style-1 {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Card principal */
+.inline-style-2 {
+    padding: 36px;
+}
+
+.inline-style-3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+/* Ícone de aviso */
+.inline-style-4 {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: var(--warning-bg);
+    color: var(--warning);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.inline-style-5 {
+    flex: 1;
+}
+
+/* Título e informações */
+.inline-style-6 {
+    font-size: 22px;
+}
+
+.inline-style-7 {
+    margin-top: 8px;
+}
+
+.inline-style-8 {
+    font-size: 15px;
+    line-height: 26px;
+    margin: 20px 0 28px;
+}
+
+/* Card de detalhes */
+.inline-style-9 {
+    background: var(--bg);
+    border: none;
+    margin-bottom: 28px;
+}
+
+.inline-style-10,
+.inline-style-12,
+.inline-style-14 {
+    margin-bottom: 12px;
+}
+
+/* Valores e destaques */
+.inline-style-11,
+.inline-style-13 {
+    font-weight: 700;
+}
+
+.inline-style-15 {
+    font-weight: 700;
+    color: var(--warning);
+}
+
+.inline-style-16 {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--blue-700);
+}
+
+/* Botões de ação */
+.inline-style-17 {
+    display: flex;
+    gap: 12px;
+}
+
+.inline-style-18,
+.inline-style-19 {
+    flex: 1;
+}
+
+/* Layout geral do dashboard */
+.dashboard-content {
+    width: 100%;
+    max-width: 1368px;
+    padding: 46px 44px 60px;
+}

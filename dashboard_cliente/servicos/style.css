@@ -1,0 +1,177 @@
+
+/* ========================================
+   ESPAÇAMENTOS
+======================================== */
+
+.inline-style-1 {
+    margin-bottom: 28px;
+}
+
+.inline-style-3 {
+    margin-bottom: 32px;
+}
+
+.inline-style-4,
+.inline-style-11,
+.inline-style-18,
+.inline-style-25 {
+    margin-bottom: 14px;
+}
+
+.inline-style-42 {
+    margin-bottom: 18px;
+}
+
+.inline-style-43,
+.inline-style-44,
+.inline-style-45 {
+    margin-bottom: 12px;
+    justify-content: flex-start;
+}
+
+.inline-style-46 {
+    justify-content: flex-start;
+}
+
+.inline-style-10,
+.inline-style-17,
+.inline-style-24,
+.inline-style-31 {
+    margin-top: 8px;
+}
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.inline-style-2 {
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
+/* ========================================
+   CABEÇALHOS E ÍCONES
+======================================== */
+
+.inline-style-5,
+.inline-style-12,
+.inline-style-19,
+.inline-style-26 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inline-style-6,
+.inline-style-13,
+.inline-style-20,
+.inline-style-27 {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inline-style-6 {
+    background: var(--blue-bg);
+    color: var(--blue);
+}
+
+.inline-style-13 {
+    background: var(--purple-bg);
+    color: var(--purple);
+}
+
+.inline-style-20 {
+    background: var(--warning-bg);
+    color: var(--warning);
+}
+
+.inline-style-27 {
+    background: var(--success-bg);
+    color: var(--success);
+}
+
+/* ========================================
+   TIPOGRAFIA
+======================================== */
+
+.inline-style-7,
+.inline-style-14,
+.inline-style-21,
+.inline-style-28 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.inline-style-8,
+.inline-style-15,
+.inline-style-22,
+.inline-style-29 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ========================================
+   BARRAS DE PROGRESSO
+======================================== */
+
+.inline-style-9 {
+    width: 30%;
+    background: var(--blue);
+}
+
+.inline-style-16 {
+    width: 30%;
+    background: var(--purple);
+}
+
+.inline-style-23 {
+    width: 36%;
+    background: var(--warning);
+}
+
+.inline-style-30 {
+    width: 14%;
+    background: var(--success);
+}
+
+/* ========================================
+   LINHAS E VALORES
+======================================== */
+
+.inline-style-32,
+.inline-style-34,
+.inline-style-36,
+.inline-style-38 {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.inline-style-40 {
+    padding: 12px 0;
+}
+
+.inline-style-33,
+.inline-style-35,
+.inline-style-37,
+.inline-style-39 {
+    font-weight: 600;
+}
+
+.inline-style-41 {
+    font-weight: 600;
+    color: var(--success);
+}
+
+/* ========================================
+   CONTEÚDO DO DASHBOARD
+======================================== */
+
+.dashboard-content {
+    width: 100%;
+    max-width: 1368px;
+    padding: 46px 44px 60px;
+}

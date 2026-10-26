@@ -1,0 +1,244 @@
+
+.settings-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 760px;
+}
+
+.panel {
+    padding: 28px 30px;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.panel-header {
+    margin-bottom: 22px;
+}
+
+.panel-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.panel-header p {
+    margin-top: 4px;
+    font-size: 12.5px;
+    color: #999999;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.setting-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.setting-row:first-child {
+    padding-top: 0;
+}
+
+.setting-row-text strong {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #222222;
+}
+
+.setting-row-text span {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 42px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: #e2e5ec;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.toggle-switch::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: left 0.2s ease;
+}
+
+.toggle-switch.is-on {
+    background-color: var(--blue);
+}
+
+.toggle-switch.is-on::after {
+    left: 21px;
+}
+
+
+/* -- Equipe / permissões -- */
+
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.team-member:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.team-member-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.team-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: var(--light-blue);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.team-member-info strong {
+    display: block;
+    font-size: 13.5px;
+    color: #222222;
+}
+
+.team-member-info span {
+    display: block;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #999999;
+}
+
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.form-input, .form-select {
+    width: 100%;
+    height: 46px;
+    padding: 0 16px;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    color: #333333;
+    font-family: inherit;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input::placeholder {
+    color: #b5b5b5;
+}
+
+.form-input:focus, .form-select:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(7, 91, 234, 0.12);
+}
+
+.btn {
+    height: 46px;
+    padding: 0 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: var(--blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue-dark);
+}
+
+.btn-outline {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    color: #555555;
+}
+
+.btn-outline:hover {
+    background-color: #f7f9fc;
+}
+
+/* =========================================================
+   SELO DE STATUS
+========================================================= */
+
+.form-actions-spaced {
+    margin-top: 16px;
+}
+
+
+
+
