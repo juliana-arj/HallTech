@@ -1,28 +1,10 @@
+
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/",
-      "destination": "/landing/landingPage/index.html"
-    },
-    {
-      "source": "/style.css",
-      "destination": "/landing/landingPage/style.css"
-    },
-    {
-      "source": "/script.js",
-      "destination": "/landing/landingPage/script.js"
-    },
-    {
-      "source": "/nav.js",
-      "destination": "/landing/nav.js"
-    },
-    {
-      "source": "/global.css",
-      "destination": "/landing/global.css"
-    },
-    {
-      "source": "/images/:path*",
-      "destination": "/landing/landingPage/images/:path*"
+      "destination": "/landing/landingPage/index.html",
+      "permanent": false
     }
   ]
 }
